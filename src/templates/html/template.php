@@ -21,7 +21,7 @@
 
         <!-- The selected template's header. -->
         <header>
-            <?php include("../default/header.php") ?>
+            <?php include("header.php") ?>
         </header>
 
         <!-- The layout's content. -->
@@ -31,7 +31,7 @@
 
         <!-- The selected template's footer. -->
         <footer>
-            <?php include("../default/footer.php") ?>
+            <?php include("footer.php") ?>
         </footer>
 
     </div>

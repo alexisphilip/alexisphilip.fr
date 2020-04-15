@@ -4,16 +4,18 @@ function pageMarkdown($type, $name)
 {
     // If a page needs to be rendered to HTML.
     if ($type == "page") {
-        $file_path = "content/pages/" . $name;
+        $file_path = "content/pages-md/" . $name;
 
         // Sets the page's title.
+        // TODO: fix title formatting with helper function.
         RenderManager::setPageTitle("Page");
     }
     // If a post needs to be rendered to HTML.
     else if ($type == "post") {
-        $file_path = "content/posts/" . $name;
+        $file_path = "content/posts-md/" . $name;
 
         // Sets the page's title.
+        // TODO: fix title formatting with helper function.
         RenderManager::setPageTitle("Post");
 
         // Loads "prism.js" library to highlight code.

@@ -3,9 +3,6 @@
 // Gets the first part of the URL;
 $url = explode("/", $_SERVER['REQUEST_URI'])[1];
 
-//$url = "about-me";
-//$url = "masplit-keyboard";
-
 // Displays home page.
 if (in_array($url, ["", "/", "home", "index"])) {
     include("controller/home.php");
@@ -19,7 +16,7 @@ if (in_array($url, ["", "/", "home", "index"])) {
 //}
 
 // Gets all the pages names.
-$pages = scandir("content/pages");
+$pages = scandir("content/pages-md");
 
 // Formats all file names, gets only the name ("about-me.md" => "about-me")
 foreach ($pages as $page) {
@@ -35,7 +32,7 @@ if (array_search($url, $pages_formated)) {
 }
 
 // Gets all the posts names.
-$posts = scandir("content/posts");
+$posts = scandir("content/posts-md");
 
 // Formats all file names, gets only the name ("2020-01-01-post-name.md" => "post-name")
 foreach ($posts as $post) {
