@@ -1,0 +1,2 @@
+<?php
+p("Home page");

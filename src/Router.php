@@ -6,11 +6,17 @@ $url = explode("/", $_SERVER['REQUEST_URI'])[1];
 //$url = "about-me";
 //$url = "masplit-keyboard";
 
-// If empty URL, home page.
+// Displays home page.
 if (in_array($url, ["", "/", "home", "index"])) {
-    p("home!");
+    include("controller/home.php");
     die;
 }
+
+// TODO: make categories & projects pages.
+// If matches HTML pages (non Markdown) route to its controller.
+//if (in_array($url, ["categories", "projects"])) {
+//    die;
+//}
 
 // Gets all the pages names.
 $pages = scandir("content/pages");
@@ -33,7 +39,7 @@ $posts = scandir("content/posts");
 
 // Formats all file names, gets only the name ("2020-01-01-post-name.md" => "post-name")
 foreach ($posts as $post) {
-    $posts_formated[] = substr($post,11,-3);
+    $posts_formated[] = substr($post, 11, -3);
 }
 
 // If the URL corresponds to a post.
