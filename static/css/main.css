@@ -12,17 +12,12 @@ body {
     box-sizing: border-box;
 }
 
-
 main {
     width: 100%;
     display: flex;
     justify-content: center;
 }
 
-.content {
+.wrapper {
     width: 800px;
-}
-
-header {
-
 }

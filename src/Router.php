@@ -3,7 +3,7 @@
 // Gets the first part of the URL;
 $url = explode("/", $_SERVER['REQUEST_URI'])[1];
 
-$url = "about-me";
+//$url = "about-me";
 //$url = "masplit-keyboard";
 
 // If empty URL, home page.
@@ -12,29 +12,35 @@ if (in_array($url, ["", "/", "home", "index"])) {
     die;
 }
 
-// Scans all the pages.
+// Gets all the pages names.
 $pages = scandir("content/pages");
+
+// Formats all file names, gets only the name ("about-me.md" => "about-me")
 foreach ($pages as $page) {
     $pages_formated[] = substr($page, 0, -3);
 }
 
 // If the URL corresponds to a page.
-if (in_array($url, $pages_formated)) {
+if (array_search($url, $pages_formated)) {
     include("controller/pageMarkdown.php");
-    pageMarkdown("page", $url);
+    $file_name = $url . ".md";
+    pageMarkdown("page", $file_name);
     die;
 }
 
-// Scans all the posts.
+// Gets all the posts names.
 $posts = scandir("content/posts");
+
+// Formats all file names, gets only the name ("2020-01-01-post-name.md" => "post-name")
 foreach ($posts as $post) {
     $posts_formated[] = substr($post,11,-3);
 }
 
-// If the URL corresponds to a project.
-if (in_array($url, $posts_formated)) {
+// If the URL corresponds to a post.
+if ($file_key = array_search($url, $posts_formated)) {
     include("controller/pageMarkdown.php");
-    pageMarkdown("post", $url);
+    $file_name = $posts[$file_key];
+    pageMarkdown("post", $file_name);
     die;
 }
 
