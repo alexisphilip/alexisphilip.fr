@@ -1,0 +1,28 @@
+html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+
+main {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.content {
+    width: 800px;
+}
+
+header {
+
+}
