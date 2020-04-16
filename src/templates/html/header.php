@@ -3,7 +3,7 @@
     Alexis Philip
 </a>
 <nav>
-    <a href="#">Me</a>
-    <a href="#">Posts</a>
-    <a href="#">Contact</a>
+    <a class="link" href="<?= base_url("about-me") ?>">Me</a>
+    <a class="link" href="<?= base_url("blog") ?>">Posts</a>
+    <a class="link" href="<?= base_url("contact") ?>">Contact</a>
 </nav>

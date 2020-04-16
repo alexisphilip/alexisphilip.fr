@@ -15,8 +15,6 @@
 <!-- Contains the body content. -->
 <?php ob_start(); ?>
 
-<!--<main>-->
-
 <div class="wrapper">
 
     <!-- The selected template's header. -->
@@ -41,8 +39,6 @@
     </footer>
 
 </div>
-
-<!--</main>-->
 
 <?php $body_content = ob_get_clean(); ?>
 

@@ -20,23 +20,28 @@
     <!-- The selected template's header. -->
     <header>
         <div class="inner-header">
-            <?php include("header.php") ?>
+            <?php include("src/templates/html/header.php") ?>
         </div>
     </header>
 
     <!-- The layout's content. -->
     <main>
         <div class="inner-main">
-            <?php include($file_path); ?>
+
         </div>
     </main>
 
     <!-- The selected template's footer. -->
     <footer>
         <div class="inner-footer">
-            <?php include("footer.php") ?>
+            <?php include("src/templates/html/footer.php") ?>
         </div>
     </footer>
+
+    <!-- Raw markdown in hidden div before it rendered by "showdown.js". -->
+    <div class="raw-markdown" style="visibility: hidden; height: 0;">
+        <?php include($file_path); ?>
+    </div>
 
 </div>
 
