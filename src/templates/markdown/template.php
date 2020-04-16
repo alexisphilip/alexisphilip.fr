@@ -15,33 +15,30 @@
 <!-- Contains the body content. -->
 <?php ob_start(); ?>
 
-<main>
+<div class="wrapper">
 
-    <div class="wrapper">
-
-        <!-- The selected template's header. -->
-        <header>
-            <?php include("../html/header.php") ?>
-        </header>
-
-        <!-- The layout's content. -->
-        <div class="content">
-
+    <!-- The selected template's header. -->
+    <header>
+        <div class="inner-header">
+            <?php include("header.php") ?>
         </div>
+    </header>
 
-        <!-- The selected template's footer. -->
-        <footer>
-            <?php include("../html/footer.php") ?>
-        </footer>
-
-        <!-- Raw markdown in hidden div before it rendered by "showdown.js". -->
-        <div class="raw-markdown" style="visibility: hidden; height: 0;">
+    <!-- The layout's content. -->
+    <main>
+        <div class="inner-main">
             <?php include($file_path); ?>
         </div>
+    </main>
 
-    </div>
+    <!-- The selected template's footer. -->
+    <footer>
+        <div class="inner-footer">
+            <?php include("footer.php") ?>
+        </div>
+    </footer>
 
-</main>
+</div>
 
 <?php $body_content = ob_get_clean(); ?>
 

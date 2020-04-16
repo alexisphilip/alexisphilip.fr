@@ -15,28 +15,34 @@
 <!-- Contains the body content. -->
 <?php ob_start(); ?>
 
-<main>
+<!--<main>-->
 
-    <div class="wrapper">
+<div class="wrapper">
 
-        <!-- The selected template's header. -->
-        <header>
+    <!-- The selected template's header. -->
+    <header>
+        <div class="inner-header">
             <?php include("header.php") ?>
-        </header>
+        </div>
+    </header>
 
-        <!-- The layout's content. -->
-        <div class="content">
+    <!-- The layout's content. -->
+    <main>
+        <div class="inner-main">
             <?php include($file_path); ?>
         </div>
+    </main>
 
-        <!-- The selected template's footer. -->
-        <footer>
+    <!-- The selected template's footer. -->
+    <footer>
+        <div class="inner-footer">
             <?php include("footer.php") ?>
-        </footer>
+        </div>
+    </footer>
 
-    </div>
+</div>
 
-</main>
+<!--</main>-->
 
 <?php $body_content = ob_get_clean(); ?>
 

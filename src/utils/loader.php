@@ -20,3 +20,8 @@ function vendors_url($url)
 {
     return ConfigManager::getConfig()["base_url"] . "/static/vendors/" . $url;
 }
+
+function img_url($url)
+{
+    return ConfigManager::getConfig()["base_url"] . "/static/img/" . $url;
+}
