@@ -10,7 +10,7 @@
                 <a class="link color-blue" href="#<?php //base_url("category/3d-printing") ?>">3D printing</a>,
                 <a class="link color-blue" href="#<?php //base_url("category/3d-printing") ?>">Rubik's Cubes</a>,
                 and more.</p>
-            <a class="btn-small lead-btn" href="https://github.com/alexisphilip">GitHub</a>
+            <a class="btn-small color-font-text lead-btn" href="https://github.com/alexisphilip">GitHub</a>
         </div>
     </div>
     <div class="sidecard">

@@ -1,9 +1,9 @@
-<a href="<?= base_url() ?>" class="link title">
+<a href="<?= base_url() ?>" class="link color-font-text title">
     <img class="website-logo" src="<?= img_url("logos/logo-large.png") ?>" alt="Website logo">
     Alexis Philip
 </a>
 <nav>
-    <a class="link" href="<?= base_url("about-me") ?>">About me</a>
-    <a class="link" href="<?= base_url("blog") ?>">Posts</a>
-    <a class="link" href="<?= base_url("contact") ?>">Contact</a>
+    <a class="link color-font-text" href="<?= base_url("about-me") ?>">About me</a>
+    <a class="link color-font-text" href="<?= base_url("blog") ?>">Articles</a>
+    <a class="link color-font-text" href="<?= base_url("contact") ?>">Contact</a>
 </nav>

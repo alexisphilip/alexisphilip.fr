@@ -3,9 +3,15 @@
 // Gets the first part of the URL;
 $url = explode("/", $_SERVER['REQUEST_URI'])[1];
 
-// Displays home page.
+// Home page.
 if (in_array($url, ["", "/", "home", "index"])) {
     include("controller/home.php");
+    die;
+}
+
+// Blog page.
+if (in_array($url, ["blog"])) {
+    include("controller/blog.php");
     die;
 }
 

@@ -44,6 +44,8 @@ html {
 body {
     font-family: 'Roboto', sans-serif;
     color: var(--color-font-text);
+    font-size: 1.1em;
+    line-height: 1.6;
 }
 
 * {
@@ -52,7 +54,12 @@ body {
 
 /* Reset */
 
+li {
+    padding: 2px 0;
+}
+
 h1, h2 {
+    margin-top: 60px;
     color: var(--color-font-title);
 }
 
@@ -61,7 +68,8 @@ p {
 }
 
 a {
-    color: var(--color-font-text)
+    text-decoration: none;
+    color: var(--color-blue);
 }
 
 /* Main */
@@ -130,9 +138,11 @@ footer {
 }
     .lead-title {
         font-size: 2.5em;
+        margin-top: 20px;
     }
     .lead-description {
         font-size: 1.3em;
+        line-height: 1.4;
     }
     .lead-btn {
         display: inline-block;
