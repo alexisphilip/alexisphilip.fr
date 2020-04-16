@@ -1,0 +1,32 @@
+{
+  "data": [
+    {
+      "name": "birdy",
+      "description": "A simple and yet complete PHP framework.",
+      "demo": ""
+    },
+    {
+      "name": "lighty-colorpicker",
+      "description": "Complete JS color picker.",
+      "demo": ""
+    },
+    {
+      "name": "F-91W",
+      "description": "The legendary F-91W, online version.",
+      "demo": ""
+    },
+    {
+      "name": "lighty-datepicker",
+      "description": "Simple JS date picker library.",
+      "demo": ""
+    },
+    {
+      "name": "lighty-clipboard",
+      "description": "Simple JS copy / page library."
+    },
+    {
+      "name": "lighty-slide",
+      "description": "Simple JS DOM element sliding library."
+    }
+  ]
+}

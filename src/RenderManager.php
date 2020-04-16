@@ -3,6 +3,12 @@
 class RenderManager
 {
     private static $pageTitle;
+    private static $pageDescription;
+
+    public static function setPageDescription($pageDescription)
+    {
+        self::$pageDescription = $pageDescription;
+    }
 
     public static function setPageTitle($pageTitle)
     {
@@ -18,7 +24,13 @@ class RenderManager
         }
     }
 
-    public static function loadTemplate($template_name, $file_path)
+    public static function getPageDescription()
+    {
+        return self::$pageDescription;
+    }
+
+
+    public static function loadTemplate($template_name, $file_path, $data = [])
     {
         $template_dir = "src/templates/";
         if (in_array($template_name, scandir($template_dir))) {

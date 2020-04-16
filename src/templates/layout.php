@@ -8,7 +8,7 @@
     <meta charset="UTF-8">
 
     <!-- Website ownership information. -->
-    <meta name="description" content="Alexis Philip's website">
+    <meta name="description" content="<?= RenderManager::getPageDescription() ?>">
     <meta name="keywords" content="Portfolio, Developer, Programmer, Full stack, Keyboard, Ergonomic keyboard, 3D printing">
     <meta name="author" content="Alexis Philip">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
