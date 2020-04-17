@@ -39,16 +39,20 @@
                 </div>
             </div>
             <div class="project-links">
-                <a class="btn-small color-font-text link-github"
+                <?php if (isset($repository["docs"]) && $repository["docs"]) { ?>
+                    <a class="btn-small color-font-title bold bg-yellow"
+                       href="<?= $repository["docs"] ?>">Docs</a>
+                <?php } ?>
+                <?php if (isset($repository["demo"]) && $repository["demo"]) { ?>
+                    <a class="btn-small color-white bold bg-blue"
+                       href="<?= base_url("demo/" . $repository["demo"]) ?>">Demo</a>
+                <?php } ?>
+                <a class="btn-small color-font-text bold link-github"
                    href="https://github.com/alexisphilip/<?= $repository["name"] ?>">
                     <img class="github-icon" src="<?= img_url("icons/github/GitHub-Mark-32px.png") ?>"
                          alt="GitHub logo">
                     GitHub
                 </a>
-                <?php if (isset($repository["demo"]) && $repository["demo"]) { ?>
-                    <a class="btn-small color-white bg-blue link-demo"
-                       href="<?= base_url("demo/" . $repository["link"]) ?>">Demo</a>
-                <?php } ?>
             </div>
         </div>
     <?php } ?>

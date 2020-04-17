@@ -3,22 +3,22 @@
     {
       "name": "birdy",
       "description": "A simple and yet complete PHP framework.",
-      "demo": ""
+      "docs": "https://birdy.alexisphilip.fr/#/"
     },
     {
       "name": "lighty-colorpicker",
       "description": "Complete JS color picker.",
-      "demo": ""
+      "demo": "lighty-colorpicker"
     },
     {
-      "name": "F-91W",
+      "name": "Casio-F-91W",
       "description": "The legendary F-91W, online version.",
-      "demo": ""
+      "demo": "F-91W"
     },
     {
       "name": "lighty-datepicker",
       "description": "Simple JS date picker library.",
-      "demo": ""
+      "demo": "lighty-datepicker"
     },
     {
       "name": "lighty-clipboard",
