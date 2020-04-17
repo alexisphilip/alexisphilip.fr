@@ -17,3 +17,6 @@ Current development URL: https://dev.alexisphilip.fr
 - make JS which adds a copies the link and modifies the URL to all titles in blog on click
 - sticky header
 
+- add moving letters library on different elements such as h1, h2 titles and others. 
+
+- add IG / Twitter

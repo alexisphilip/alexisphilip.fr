@@ -13,6 +13,14 @@
     <meta name="author" content="Alexis Philip">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!-- Favicon. -->
+    <link rel="apple-touch-icon" sizes="180x180" href="<?= img_url("favicons/apple-touch-icon.png") ?>">
+    <link rel="icon" type="image/png" sizes="32x32" href="<?= img_url("favicons/favicon-32x32.png") ?>">
+    <link rel="icon" type="image/png" sizes="16x16" href="<?= img_url("favicons/favicon-16x16.png") ?>">
+    <link rel="manifest" href="<?= img_url("favicons/site.webmanifest") ?>">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
     <!-- Include all CSS vendors. -->
     <?php foreach (AssetsManager::getVendorsCssFiles() as $css_file) { ?>
         <link href="<?= vendors_url($css_file) ?>" rel="stylesheet" type="text/css">
