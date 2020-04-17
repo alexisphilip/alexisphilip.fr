@@ -13,7 +13,7 @@
             <a class="btn-small color-font-text lead-btn" href="https://github.com/alexisphilip">GitHub</a>
         </div>
     </div>
-    <div class="sidecard">
+    <div class="sidecard card-colored">
         <img class="profile-pic" src="<?= img_url("profile-pic.png") ?>" alt="Profile pic">
         <p class="bold color-white">Checkout my blog here!</p>
         <a class="link bold btn-small bg-white color-font-text" href="<?= base_url("blog") ?>">All articles</a>
@@ -33,7 +33,10 @@
                 <div class="project-text">
                     <p class="project-title">
                         <a class="link color-blue"
-                           href="https://github.com/alexisphilip/<?= $repository["name"] ?>"><?= $repository["name"] ?></a>
+                           href="https://github.com/alexisphilip/<?= $repository["name"] ?>">
+                            <?= $repository["emoji"] ?>
+                            <?= $repository["name"] ?>
+                        </a>
                     </p>
                     <p class="project-title-description"><?= $repository["description"] ?></p>
                 </div>

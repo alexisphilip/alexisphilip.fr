@@ -115,6 +115,14 @@ footer {
 .m-0 {
     margin: 0;
 }
+.mx-0 {
+    margin-right: 0;
+    margin-left: 0;
+}
+.my-0 {
+    margin-top: 0;
+    margin-bottom: 0;
+}
 
 
 /* LINKS & BUTTONS */
@@ -131,12 +139,24 @@ footer {
     margin: auto 10px;
 }
 
+.btn-medium {
+    text-decoration: none;
+    padding: 6px 8px;
+    border-radius: 5px;
+    font-size: 1em;
+    margin: auto 10px;
+}
+
+.hover-white:hover {
+    background: var(--bg-light);
+    color: black;
+}
 
 
 
 /* Large title replicating h1 size */
 .large-title {
-    font-size: 32px;
+    font-size: 35.2px;
     color: var(--color-font-title);
 }
 
@@ -173,12 +193,8 @@ footer {
     width: 220px;
     min-width: 220px;
     max-width: 220px;
-    border-radius: 10px;
     margin-left: 40px;
-    padding: 40px;
-    background-image: linear-gradient(to right top, #ffe360, #ffcf5b, #ffbc5a, #ffa95c, #ff9760);
     text-align: center;
-    box-shadow: 0 2px 7px rgba(41,41,42,0.3);
 }
     .profile-pic {
         height: 110px;
@@ -187,6 +203,14 @@ footer {
     }
 
 
+
+/* Colored card */
+.card-colored {
+    background-image: linear-gradient(to right top, #ffe360, #ffcf5b, #ffbc5a, #ffa95c, #ff9760);
+    box-shadow: 0 2px 7px rgba(41,41,42,0.3);
+    padding: 20px;
+    border-radius: 10px;
+}
 
 
 
@@ -235,6 +259,16 @@ footer {
 
 
 
+/* BLOG PAGE */
+
+.categories {
+    display: flex;
+    flex-wrap: wrap;
+}
+.categories a {
+    margin-top: 7px;
+    margin-bottom: 7px;
+}
 
 
 

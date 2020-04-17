@@ -2,30 +2,36 @@
   "data": [
     {
       "name": "birdy",
+      "emoji": "\uD83D\uDC26",
       "description": "A simple and yet complete PHP framework.",
       "docs": "https://birdy.alexisphilip.fr/#/"
     },
     {
       "name": "lighty-colorpicker",
+      "emoji": "\uD83C\uDFA8",
       "description": "Complete JS color picker.",
       "demo": "lighty-colorpicker"
     },
     {
       "name": "Casio-F-91W",
+      "emoji": "⌚",
       "description": "The legendary F-91W, online version.",
       "demo": "F-91W"
     },
     {
       "name": "lighty-datepicker",
+      "emoji": "\uD83D\uDCC6",
       "description": "Simple JS date picker library.",
       "demo": "lighty-datepicker"
     },
     {
       "name": "lighty-clipboard",
+      "emoji": "\uD83D\uDCCE",
       "description": "Simple JS copy / page library."
     },
     {
       "name": "lighty-slide",
+      "emoji": "\uD83C\uDF0A",
       "description": "Simple JS DOM element sliding library."
     }
   ]
