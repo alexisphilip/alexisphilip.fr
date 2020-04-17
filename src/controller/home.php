@@ -4,7 +4,11 @@ include("src/model/blogModel.php");
 include("src/model/repositoryModel.php");
 
 // Sets the page's title.
-RenderManager::setPageTitle("home");
+RenderManager::setPageTitleSuffix("Full stack web developer");
+
+// Sets the meta description.
+RenderManager::setMetaDescription("I'm a full stack web developer based in Aix-en-Provence, France.
+I mainly use PHP, JS, SASS, CSS and Python. Contact me or checkout my open sources projects, articles and posts in my blog.");
 
 $file_path = "content/pages-html/home.php";
 

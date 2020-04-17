@@ -1,7 +1,7 @@
 
 # About me
 
-I am a full stack developer who loves to develop. From small programs to large scale architectures, from 
+I am a full stack developer based in Aix-en-Provence, France. From small programs to large scale architectures, from 
 widgets to libraries, I focus on maintaining a strict workflow to build clean and reusable environments.
 Creating useful and original content is what I love to do.
 

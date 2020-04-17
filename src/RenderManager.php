@@ -2,31 +2,43 @@
 
 class RenderManager
 {
-    private static $pageTitle;
-    private static $pageDescription;
+    private static $pageTitlePrefix;
+    private static $pageTitleSuffix;
+    private static $metaDescription;
 
-    public static function setPageDescription($pageDescription)
+    public static function setPageTitlePrefix($pageTitlePrefix)
     {
-        self::$pageDescription = $pageDescription;
+        self::$pageTitlePrefix = $pageTitlePrefix;
     }
 
-    public static function setPageTitle($pageTitle)
+    public static function setPageTitleSuffix($pageTitleSuffix)
     {
-        self::$pageTitle = $pageTitle;
+        self::$pageTitleSuffix = $pageTitleSuffix;
+    }
+
+    public static function setMetaDescription($pageDescription)
+    {
+        self::$metaDescription = $pageDescription;
     }
 
     public static function getPageTitle()
     {
-        if (isset(self::$pageTitle)) {
-            return self::$pageTitle . " · " . ConfigManager::getConfig()["default_title"];
-        } else {
-            return self::$pageTitle;
+        $page_title = ConfigManager::getConfig()["default_title"];
+
+        if (isset(self::$pageTitlePrefix)) {
+            $page_title = self::$pageTitlePrefix . " · " . $page_title;
         }
+
+        if (isset(self::$pageTitleSuffix)) {
+            $page_title = $page_title . " · " . self::$pageTitleSuffix;
+        }
+
+        return $page_title;
     }
 
-    public static function getPageDescription()
+    public static function getMetaDescription()
     {
-        return self::$pageDescription;
+        return self::$metaDescription;
     }
 
 
