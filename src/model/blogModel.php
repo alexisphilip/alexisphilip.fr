@@ -8,12 +8,20 @@ function getArticles($limit = 0)
     // Formats all file names, gets only the name ("2020-01-01-post-name.md" => "post-name")
     $key = 0;
     foreach ($posts as $post) {
+        // If match is a file name (and not parent directory like "." and "..").
         if (!in_array($post, [".", ".."])) {
-            $date = substr($post, 0, 10);
-            $formated_post_info[$key]["date"] = $date;
-            $formated_post_info[$key]["name"] = substr(file("content/posts-md/" . $post)[1], 2);
-            $formated_post_info[$key]["raw_name"] = substr($post, 11, -3);
-            $key++;
+
+            // Gets the post's file content.
+            $file_content = file_get_contents("content/posts-md/" . $post);
+
+            // Matches only the JSON text.
+            preg_match("/{((.|\n)*?)}/", $file_content, $post_config);
+
+            // Transforms it to JSON.
+            $formated_post_info[] = json_decode($post_config[0], true);
+
+            // Matches only the JSON text and replaces it by an empty string.
+//            $post_content = preg_replace("/{((.|\n)*?)}/", "", $file_content);
         }
     }
 

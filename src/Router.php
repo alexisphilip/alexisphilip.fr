@@ -49,6 +49,7 @@ foreach ($posts as $post) {
 if ($file_key = array_search($url, $posts_formated)) {
     include("controller/pageMarkdown.php");
     $file_name = $posts[$file_key];
+    // TODO: pass post name in argument so it won't have to search it later on in the pageMarkdown controller.
     pageMarkdown("post", $file_name);
     die;
 }
