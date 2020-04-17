@@ -3,7 +3,7 @@
     --color-font-title: #29292A;
     --color-font-text: #484849;
 
-    --border-light: #D8D9DB;
+    --border-light: #DDDEE0;
     --bg-light: #F1F3F5;
 
     --bg-blue: #4C83D5;
@@ -12,6 +12,8 @@
     --bg-yellow: #ffe360;
     --color-yellow: #ffe360;
 }
+
+/* COLORS */
 
 .bg-blue {
     background: var(--bg-blue);
@@ -37,6 +39,18 @@
 .color-white {
     color: white;
 }
+
+/* HOVER */
+.hover-grey:hover {
+    background: var(--bg-light);
+    color: black;
+}
+.hover-white:hover {
+    background: white;
+    color: black;
+}
+
+
 
 .bold {
     font-weight: 700;
@@ -133,7 +147,7 @@ footer {
 
 .btn-small {
     text-decoration: none;
-    padding: 3px 5px;
+    padding: 3px 9px;
     border-radius: 5px;
     font-size: 0.8em;
     margin: auto 10px;
@@ -145,11 +159,6 @@ footer {
     border-radius: 5px;
     font-size: 1em;
     margin: auto 10px;
-}
-
-.hover-white:hover {
-    background: var(--bg-light);
-    color: black;
 }
 
 
@@ -171,6 +180,7 @@ footer {
 
 .sidetext {
     display: flex;
+    align-items: center;
 }
     .lead-title {
         font-size: 2.5em;
@@ -190,6 +200,8 @@ footer {
         height: 13px;
     }
 .sidecard {
+    display: flex;
+    align-items: center;
     width: 220px;
     min-width: 220px;
     max-width: 220px;
@@ -211,6 +223,31 @@ footer {
     padding: 20px;
     border-radius: 10px;
 }
+
+
+
+
+/* List (articles, or small elements which need a list...) */
+.list {
+    display: flex;
+    flex-direction: column;
+}
+.list-el {
+    padding: 2px 0 2px 20px;
+    border-bottom: 1px solid var(--border-light);
+}
+.list-el:hover {
+    background: var(--bg-light);
+}
+    .list-el-title {
+        color: var(--color-font-title);
+        margin-bottom: 0;
+        font-weight: bold;
+    }
+    .list-el-description {
+        margin-top: 5px;
+        font-size: 0.8em;
+    }
 
 
 

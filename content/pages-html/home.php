@@ -1,8 +1,7 @@
-
 <div class="lead">
     <div class="sidetext">
         <div>
-            <h1 class="lead-title color-font-title">Hi, I'm Alexis</h1>
+            <h2 class="lead-title color-font-title">Hi, I'm Alexis!</h2>
             <p class="lead-description">As a full stack developper I love to program widgets, libraries, and larger
                 scale applications. I write a lot about the things I love, like
                 <a class="link color-blue" href="#<?php //base_url("category/programming") ?>">programming</a>,
@@ -14,11 +13,25 @@
         </div>
     </div>
     <div class="sidecard card-colored">
-        <img class="profile-pic" src="<?= img_url("profile-pic.png") ?>" alt="Profile pic">
-        <p class="bold color-white">Checkout my blog here!</p>
-        <a class="link bold btn-small bg-white color-font-text" href="<?= base_url("blog") ?>">All articles</a>
+        <div>
+            <img class="profile-pic" src="<?= img_url("profile-pic.png") ?>" alt="Profile pic">
+            <p class="bold color-white">Checkout my blog here!</p>
+            <a class="btn-medium bg-white color-font-text bold" href="<?= base_url("blog") ?>">All articles</a>
+        </div>
     </div>
 </div>
+
+<h1>Latest articles</h1>
+
+<div class="list">
+    <?php foreach ($data["articles"] as $post) { ?>
+        <a class="list-el" href="<?= base_url($post["raw_name"]) ?>">
+            <p class="list-el-title"><?= $post["name"] ?></p>
+            <p class="list-el-description"><?= (new DateTime($post["date"]))->format("d M\. Y") ?></p>
+        </a>
+    <?php } ?>
+</div>
+
 
 <h2 class="large-title">My open source projects</h2>
 
