@@ -11,7 +11,25 @@
     <meta name="description" content="<?= RenderManager::getMetaDescription() ?>">
     <meta name="keywords" content="Portfolio, Developer, Programmer, Full stack, Keyboard, Ergonomic keyboard, 3D printing">
     <meta name="author" content="Alexis Philip">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- SEO -->
+    <!-- Open Graph -->
+    <meta property="og:title" content="<?= RenderManager::getPageTitle() ?>">
+    <meta property="og:description" content="<?= RenderManager::getMetaDescription() ?>">
+    <meta property="og:type" content="personnal.blog.website">
+    <meta property="og:url" content="<?= "https://" . $_SERVER["HTTP_HOST"] . $_SERVER["REQUEST_URI"] ?>">
+    <meta property="og:image" content="<?= img_url("logos/logo-black-1000x1000.png") ?>">
+    <!-- Schema.org -->
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org/",
+            "@type": "Info",
+            "name": "Alexis Philip's personal website",
+            "author": "Alexis Philip",
+            "description": "A classic apple pie."
+        }
+    </script>
 
     <!-- Favicon. -->
     <link rel="apple-touch-icon" sizes="180x180" href="<?= img_url("favicons/apple-touch-icon.png") ?>">
