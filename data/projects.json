@@ -46,6 +46,12 @@
       "emoji": "\uD83C\uDF0A",
       "description": "Simple JS DOM element sliding library.",
       "github": true
+    },
+    {
+      "name": "alexisphilip.fr",
+      "emoji": "\uD83D\uDC66",
+      "description": "Personnal website running PHP & JS.",
+      "github": true
     }
   ]
 }
