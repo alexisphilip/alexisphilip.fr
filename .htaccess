@@ -1,6 +1,8 @@
 RewriteEngine On
 
 RewriteRule ^blare/(.*)$ /content/blare/$1 [L,R=301,NC]
+#RewriteRule /colorpicker /demo/lighty-colorpicker #[R=301,L]
+#RewriteRule /datepicker /demo/lighty-datepicker #[R=301,L]
 
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d

@@ -1,0 +1,103 @@
+html, body {
+	background-image: linear-gradient(to right top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
+	margin: 0;
+	color: white;
+	font-family: arial;
+
+	height: 100%;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+a {
+	text-decoration: none;
+	color: white;
+}
+
+/* General */
+
+.container {
+	/* Contient tous les éléments (header et talbeau) */
+}
+
+span, input {
+	font-weight: bold;
+	font-size: 1.3em;
+	font-family: monospace;
+	color: white;
+}
+
+td:hover {
+	cursor: pointer;
+}
+
+/* Header */
+
+.header {
+	display: flex;
+	justify-content: space-between;
+	margin: 0 0 10px 2px;
+}
+
+.mask_and_ip {
+	display: flex;
+}
+
+.header_ip {
+	margin-right: 10px;
+}
+
+.header_ip input {
+	width: 130px;
+}
+
+.header_mask input {
+	width: 20px;
+}
+
+.btn-container, .modal-container {
+	height: 100%;
+	display: flex;
+	align-items: flex-end;
+}
+
+.modal-container {
+	opacity: 0;
+}
+
+.btn, .modal {
+	background: rgba(255,255,255,0.2);
+	padding: 8px;
+	font-weight: bold;
+}
+
+input {
+	background: rgba(255,255,255,0.2);
+	border: none; 
+	padding: 8px;
+}
+
+
+/* Tableau */
+
+tr {
+	background: rgba(255,255,255,0.2);
+}
+
+th, td {
+	padding: 8px;
+	text-align: left;
+}
+
+.animation {
+	animation: run-animation 1.2s;
+}
+
+@keyframes run-animation {
+	0% {opacity: 0;}
+	10% {opacity: 1;}
+	90% {opacity: 1;}
+	100% {opacity: 0;}
+}

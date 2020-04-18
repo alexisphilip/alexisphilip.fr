@@ -65,15 +65,22 @@
         <div class="list-element">
             <div class="project-content">
                 <div class="project-image">
-
+                    <!-- TODO: see if project image is needed. -->
                 </div>
                 <div class="project-text">
                     <p class="project-title">
+                        <?php if (isset($repository["github"])) { ?>
                         <a class="link color-blue"
                            href="https://github.com/alexisphilip/<?= $repository["name"] ?>">
                             <?= $repository["emoji"] ?>
                             <?= $repository["name"] ?>
                         </a>
+                        <?php } else { ?>
+                            <span class="color-font-text">
+                                <?= $repository["emoji"] ?>
+                                <?= $repository["name"] ?>
+                            </span>
+                        <?php } ?>
                     </p>
                     <p class="project-title-description"><?= $repository["description"] ?></p>
                 </div>
