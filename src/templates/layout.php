@@ -26,9 +26,26 @@
             "@context": "https://schema.org/",
             "@type": "Info",
             "name": "Alexis Philip's personal website",
+            "url": "https://www.alexisphilip.fr",
             "author": "Alexis Philip",
-            "description": "Website where I post articles about the things I love. Checkout my open source repositories or contact me."
+            "description": "Website where I post articles about the things I love. Checkout my open source repositories or contact me.",
+            "sameAs": [
+                "https://twitter.com/alexisphilip13",
+                "https://www.instagram.com/alexisphilip13",
+                "https://www.linkedin.com/in/alexis-philip-019955176",
+                "https://github.com/alexisphilip"
+            ]
         }
+    </script>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-156016150-2"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-156016150-2');
     </script>
 
     <!-- Favicon. -->

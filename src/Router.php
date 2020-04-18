@@ -1,5 +1,12 @@
 <?php
 
+/*
+ * SET CACHE.
+ */
+header('Cache-Control: public');
+header("Cache-Control: max-age=86400");
+
+
 // Gets the first part of the URL;
 $url = explode("/", $_SERVER['REQUEST_URI']);
 

@@ -393,8 +393,24 @@ footer {
 
 .inner-footer nav a {
     padding: 13px 25px;
+    text-align: center;
 }
 
 .inner-footer nav a:hover {
     color: black;
+}
+
+.inner-footer nav img {
+    height: 20px;
+    width: 20px;
+}
+
+
+@media (max-width: 500px) {
+    .inner-footer,
+    .inner-footer nav {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
 }

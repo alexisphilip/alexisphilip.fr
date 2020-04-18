@@ -4,7 +4,8 @@ Personnal website. https://www.alexisphilip.fr
 
 ## Todo
 
-- add /demo/ parser
+
+
 - /DOCS maybe ?
 - blog date parser & modify btn;
 - make categories & projects pages.
@@ -31,6 +32,6 @@ https://html-css-js.com/html/character-codes/
 ## Social
 - add IG / Twitter, etc
 
-## Referencing
+## SEO
 - ideally, add most favicon to homepage (really useful?)
-
+- cache control: maybe activate apache2 cache mod?
