@@ -6,10 +6,10 @@ Current development URL: https://dev.alexisphilip.fr
 
 ## Todo
 
-- MOVE TO https://www.alexisphilip.fr
-
 - in pageMarkdown: separate in two controllers `page.php` `article.php`.
-  call models, and make special model function which gets data from markdown  
+  call models, and make special model function which gets data from markdown
+  
+- add JS which adds meta description & to the elements   
 
 - article link: <a> tag prevents putting other <a> tag for categories. Need JS for links:
   - or do everything with <a> tag and do hover with JS
