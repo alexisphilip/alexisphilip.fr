@@ -32,7 +32,8 @@
       "name": "subnet-calculator",
       "emoji": "\uD83D\uDD22",
       "description": "Easy to use subnet calculator in JS.",
-      "demo": true
+      "demo": true,
+      "github": true
     },
     {
       "name": "lighty-clipboard",
