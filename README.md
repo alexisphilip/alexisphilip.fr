@@ -6,9 +6,7 @@ Current development URL: https://dev.alexisphilip.fr
 
 ## Todo
 
-- in pageMarkdown: separate in two controllers `page.php` `article.php`.
-  call models, and make special model function which gets data from markdown
-  
+- fix pages parsing  
 - add JS which adds meta description & to the elements   
 
 - article link: <a> tag prevents putting other <a> tag for categories. Need JS for links:
@@ -26,7 +24,3 @@ Current development URL: https://dev.alexisphilip.fr
 - add IG / Twitter
 - idealy, add favicons to homepage (really useful?)
 
-
-### Redirections
-
-Always redirect to https://www.alexisphiliip.fr

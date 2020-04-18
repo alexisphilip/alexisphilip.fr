@@ -1,6 +1,6 @@
 <?php
 
-include("src/model/blogModel.php");
+include("src/model/markdownModel.php");
 
 // Sets the page's title.
 RenderManager::setPageTitlePrefix("Articles and posts about things I love");

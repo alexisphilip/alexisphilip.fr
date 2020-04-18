@@ -1,6 +1,6 @@
 <?php
 
-include("src/model/blogModel.php");
+include("src/model/markdownModel.php");
 include("src/model/repositoryModel.php");
 
 // Sets the page's title.

@@ -1,8 +1,10 @@
 <?php
 
-$file_path = "content/pages-md/" . $file_name;
+include("src/model/markdownModel.php");
 
-// TODO: fix title formatting with helper function.
+$data = BlogModel::getFile("page", $file_slug . ".md");
+
+// TODO: fix title formatting with helper function (always more than 20 chars?).
 if ($file_slug == "contact") {
     // Sets the page's title.
     RenderManager::setPageTitlePrefix("Contact me, let's have a talk");
@@ -24,4 +26,4 @@ AssetsManager::loadVendorsJsFiles("showdown.js");
 AssetsManager::loadJS("renderHTML.js");
 
 // Loads the selected template and renders it.
-RenderManager::loadTemplate("markdown", $file_path);
+RenderManager::loadTemplate("markdown", "", $data);

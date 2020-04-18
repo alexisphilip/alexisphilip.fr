@@ -34,7 +34,7 @@ if (array_search($url, $pages_slugs)) {
 }
 
 // Gets all the posts names and extracts the slug from them ("2020-01-01-post-name.md" => "post-name")
-foreach (scandir("content/posts-md") as $file_name) {
+foreach (scandir("content/articles-md") as $file_name) {
     $articles_names[] = $file_name;
     $articles_slugs[] = substr($file_name, 11, -3);
 }

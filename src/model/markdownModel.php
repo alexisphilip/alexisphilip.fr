@@ -11,7 +11,7 @@ class BlogModel
     public static function getArticles(int $limit = 0): array
     {
         // Gets all the posts names.
-        $posts = scandir("content/posts-md");
+        $posts = scandir("content/articles-md");
 
         // Formats all file names, gets only the name ("2020-01-01-post-name.md" => "post-name")
         $key = 0;
@@ -20,7 +20,7 @@ class BlogModel
             if (!in_array($post, [".", ".."])) {
 
                 // Gets the post's file content.
-                $file_content = file_get_contents("content/posts-md/" . $post);
+                $file_content = file_get_contents("content/articles-md/" . $post);
 
                 // Extracts its header info.
                 $formated_post_info[] = self::extractData($file_content)["file_info"];
@@ -45,18 +45,18 @@ class BlogModel
         return $formated_post_info;
     }
 
-
     /**
      * Returns the file's data from it's name.
      *
+     * @param string $type The file's type ("page", "article").
      * @param string $file_name The file's name.
      * @return array
      * @see self::extractData()
      */
-    public static function getArticle(string $file_name): array
+    public static function getFile(string $type, string $file_name): array
     {
         // Gets the article's file content.
-        $file_content = file_get_contents("content/posts-md/" . $file_name);
+        $file_content = file_get_contents("content/" . $type . "s-md/" . $file_name);
 
         return self::extractData($file_content);
     }
