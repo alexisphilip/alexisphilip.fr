@@ -21,36 +21,29 @@ if (in_array($url, ["blog"])) {
 //    die;
 //}
 
-// Gets all the pages names.
-$pages = scandir("content/pages-md");
-
-// Formats all file names, gets only the name ("about-me.md" => "about-me")
-foreach ($pages as $page) {
-    $pages_formated[] = substr($page, 0, -3);
+// Gets all the pages names and extracts the slug from them ("about-me.md" => "about-me")
+foreach (scandir("content/pages-md") as $page) {
+    $pages_slugs[] = substr($page, 0, -3);
 }
 
 // If the URL corresponds to a page.
-if (array_search($url, $pages_formated)) {
+if (array_search($url, $pages_slugs)) {
+    $file_slug = $url;
     include("controller/pageMarkdown.php");
-    $file_name = $url . ".md";
-    pageMarkdown("page", $file_name);
     die;
 }
 
-// Gets all the posts names.
-$posts = scandir("content/posts-md");
-
-// Formats all file names, gets only the name ("2020-01-01-post-name.md" => "post-name")
-foreach ($posts as $post) {
-    $posts_formated[] = substr($post, 11, -3);
+// Gets all the posts names and extracts the slug from them ("2020-01-01-post-name.md" => "post-name")
+foreach (scandir("content/posts-md") as $file_name) {
+    $articles_names[] = $file_name;
+    $articles_slugs[] = substr($file_name, 11, -3);
 }
 
 // If the URL corresponds to a post.
-if ($file_key = array_search($url, $posts_formated)) {
-    include("controller/pageMarkdown.php");
-    $file_name = $posts[$file_key];
-    // TODO: pass post name in argument so it won't have to search it later on in the pageMarkdown controller.
-    pageMarkdown("post", $file_name);
+if ($file_key = array_search($url, $articles_slugs)) {
+    $file_slug = $url;
+    $file_name = $articles_names[$file_key];
+    include("controller/articleMarkdown.php");
     die;
 }
 

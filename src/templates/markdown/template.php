@@ -38,9 +38,9 @@
         </div>
     </footer>
 
-    <!-- Raw markdown in hidden div before it rendered by "showdown.js". -->
+    <!-- Raw markdown content in hidden div before it rendered by "showdown.js". -->
     <div class="raw-markdown" style="visibility: hidden; height: 0;">
-        <?php include($file_path); ?>
+        <?= $data["file_content"] ?>
     </div>
 
 </div>

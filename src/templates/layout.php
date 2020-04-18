@@ -27,7 +27,7 @@
             "@type": "Info",
             "name": "Alexis Philip's personal website",
             "author": "Alexis Philip",
-            "description": "A classic apple pie."
+            "description": "Website where I post articles about the things I love. Checkout my open source repositories or contact me."
         }
     </script>
 

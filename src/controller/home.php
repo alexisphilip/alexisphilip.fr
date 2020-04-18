@@ -13,7 +13,7 @@ Contact me or checkout my open sources projects, articles and posts in my blog."
 $file_path = "content/pages-html/home.php";
 
 // Gets the 5 latest articles.
-$data["articles"] = getArticles(5);
+$data["articles"] = BlogModel::getArticles(5);
 
 // Gets all the repositories.
 $data["repositories"] = getRepositories();

@@ -12,7 +12,7 @@ keyboards, 3D printing, Rubik's Cubes, piano, and many more.");
 $file_path = "content/pages-html/blog.php";
 
 // Gets all the articles.
-$data["articles"] = getArticles();
+$data["articles"] = BlogModel::getArticles();
 
 // Loads the selected template and renders it.
 RenderManager::loadTemplate("html", $file_path, $data);

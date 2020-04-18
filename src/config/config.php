@@ -1,6 +1,6 @@
 <?php
 
-$config["base_url"] = "https://dev.alexisphilip.fr";
+$config["base_url"] = "https://www.alexisphilip.fr";
 
 $config["default_title"] = "Alexis Philip";
 
