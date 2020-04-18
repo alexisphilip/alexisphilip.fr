@@ -21,7 +21,7 @@
     <meta property="og:url" content="<?= "https://" . $_SERVER["HTTP_HOST"] . $_SERVER["REQUEST_URI"] ?>">
     <meta property="og:image" content="<?= img_url("logos/logo-black-1000x1000.png") ?>">
     <!-- Schema.org -->
-    <script type="application/ld+json">
+    <script id="schema_org" type="application/ld+json">
         {
             "@context": "https://schema.org/",
             "@type": "Info",

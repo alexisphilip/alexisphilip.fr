@@ -8,7 +8,9 @@ $data = BlogModel::getFile("article", $file_name);
 // TODO: fix title formatting with helper function (always more than 20 chars?).
 RenderManager::setPageTitlePrefix($data["file_info"]["title"]);
 
-// The meta description will be set by the JS, putting the article's content in it.
+// The meta description / Open Graph & other will be set by
+// this JS script by putting the article's content in it.
+AssetsManager::loadJS("addMetaDescription.js");
 
 // Loads "prism.js" library to highlight code.
 AssetsManager::loadVendorsCssFiles("prism.css");
