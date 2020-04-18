@@ -1,0 +1,266 @@
+html, body {
+	height: 100%;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	/*background: #A8A8A8;*/
+	font-family: Arial;
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	background-image: linear-gradient(to right top, #384355, #343e4f, #303949, #2d3544, #29303e, #29303e, #29303e, #29303e, #2d3544, #303949, #343e4f, #384355);
+}
+
+
+
+/* PRESENTATION */
+
+.main {
+	height: 100%;
+	width: 100%;
+}
+.title-box {
+	height: 15%;
+	padding: 40px 0 0 40px;
+	color: white;
+	font-family: Casio, Calibri;
+}
+.title {
+	font-size: 1.5em;
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+.content {
+	font-size: 1.1em;
+	letter-spacing: 1px;
+}
+
+.content-box {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 70%;
+	animation: shadow 10s infinite;
+}
+
+
+
+/* COLOR PICKER */
+
+* {
+	box-sizing: border-box;
+}
+
+
+input,
+input:focus {
+	border: none;
+	outline: none;
+}
+
+
+.color-picker {
+	box-shadow: 0px 7px 45px -11px rgba(0, 0, 0, 0.75);
+	background: #5c5c5c;
+	padding: 20px;
+	display: inline-block;
+}
+
+.section {
+	display: flex;
+	justify-content: space-between;
+}
+
+.palette-wrapper {
+	position: relative;
+}
+
+.palette-canvas {
+	/*box-shadow: 0px 7px 45px -11px rgba(255,255,255,0.12);*/
+}
+
+.palette-pointer {
+	position: absolute;
+	width: 21px;
+	height: 21px;
+	border-radius: 20px;
+	border: 2px solid white;
+}
+
+.palette-pointer:hover {
+	cursor: pointer;
+}
+
+.outputs-container {
+	/*margin-left: 20px;*/
+	height: 250px;
+}
+
+.output-color {
+	height: 100px; /* 100px était la taille initiale */
+	width: 150px;
+	border-radius: 5px;
+	display: flex;
+}
+
+.output-color-hover-rgb,
+.output-color-hover-hex {
+	width: 50%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: transparent;
+	font-family: Consolas;
+	font-size: 1em;
+	font-weight: bold;
+	-moz-user-select: none;
+}
+
+.output-color-hover-rgb {
+	border-radius: 5px 0 0 5px;
+}
+
+.output-color-hover-hex {
+	border-radius: 0 5px 5px 0;
+}
+
+.output-color-hover-rgb:hover,
+.output-color-hover-hex:hover {
+	color: #DEDEDE;
+	background: rgba(0, 0, 0, 0.2);
+	box-shadow: 0px 0px 25px -11px rgba(255, 255, 255, 0.6);
+	cursor: pointer;
+}
+
+.output-color-hover-rgb:active,
+.output-color-hover-hex:active {
+	color: #FAFAFA;
+	font-size: 1.45em;
+	background: rgba(0, 0, 0, 0.3);
+	box-shadow: 0px 0px 25px -11px rgba(255, 255, 255, 0.8);
+	transition: 0.05s;
+}
+
+.output-color-hover-rgb span,
+.output-color-hover-hex span {
+	transition: 0.05s;
+}
+
+.output-color-hover-rgb:active span,
+.output-color-hover-hex:active span {
+	transform: scale(1.1) rotate(-15deg);
+	transition: 0.05s;
+}
+
+.output-data {
+	height: 130px; /* 130px était la taille initiale */
+	width: 150px;
+	margin-top: 20px; /* 20px était la margin-top initiale, total de 250px (hauteur de la palette) */
+	display: flex;
+	justify-content: space-around;
+	flex-direction: column;
+	border-radius: 5px;
+	padding: 8px;
+	box-shadow: 0px 0px 25px -11px rgba(255, 255, 255, 0.6);
+}
+
+.output-box {
+
+}
+
+label {
+	font-size: 0.8em;
+	font-family: Consolas;
+	color: #DEDEDE;
+}
+
+.output-box input {
+	width: 134px;
+	padding: 0;
+	margin: 0;
+	border-bottom: 1px solid #6A6A6A;
+	background: none;
+	font-size: 1em;
+	font-weight: bold;
+	font-family: Consolas;
+	color: white;
+}
+
+.hue-wrapper {
+	position: relative;
+	margin-top: 20px;
+}
+
+.hue-canvas {
+	border-radius: 5px;
+}
+
+.hue-pointer {
+	/*left: 0;*/ /* Laisser les position pour avoir la transition pendant le lancement. */
+	top: 0;
+	position: absolute;
+	height: 20px;
+	width: 10px;
+	border-radius: 10px;
+	border: 2px solid white;
+}
+
+.egg-wrapper {
+	display: none; /* flex none */
+	justify-content: space-between;
+	margin-top: 20px;
+}
+
+.nerd-stats,
+.cmd {
+	height: 180px;
+	max-height: 180px;
+	background: #1b1b1d;
+	color: white;
+	font-family: Consolas;
+	font-size: 0.8em;
+}
+
+.nerd-stats {
+	width: 150px;
+}
+
+.cmd {
+	width: 400px; /* 250px */
+	overflow: scroll;
+	overflow-x: hidden;
+}
+
+.cmd-line {
+	padding: 2px 5px;
+	height: 20px;
+	display: flex;
+}
+
+.path {
+	display: inline-block;
+	margin-right: 5px;
+}
+
+.cmd-line input {
+	width: 430px; /* 112px */
+	padding: 0;
+	margin-bottom: 1px;
+	font-family: Consolas;
+	background: none;
+	border: none;
+	color: inherit;
+	/*white-space: pre;
+    color: transparent;
+    text-shadow: 0 0 0 white;*/
+}
+
+.nerd-stats .cmd-line:first-of-type {
+	display: flex; /* text-align center ne marche pas */
+	justify-content: center;
+	width: 100%;
+}

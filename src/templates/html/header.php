@@ -1,5 +1,5 @@
 <a href="<?= base_url() ?>" class="link color-font-text title">
-    <img class="website-logo" src="<?= img_url("logos/logo-black-384x384.png") ?>" alt="Website logo">
+    <img class="website-logo" src="<?= img_url("logos/logo-400x400.png") ?>" alt="Website logo">
     Alexis Philip
 </a>
 <nav>

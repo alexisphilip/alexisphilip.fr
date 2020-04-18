@@ -1,23 +1,31 @@
 <?php
 
 // Gets the first part of the URL;
-$url = explode("/", $_SERVER['REQUEST_URI'])[1];
+$url = explode("/", $_SERVER['REQUEST_URI']);
 
 // Home page.
-if (in_array($url, ["", "/", "home", "index"])) {
+if (in_array($url[1], ["", "/", "home", "index"])) {
     include("controller/home.php");
     die;
 }
 
 // Blog page.
-if (in_array($url, ["blog"])) {
+if (in_array($url[1], ["blog"])) {
     include("controller/blog.php");
     die;
 }
 
+// Demo section /content/demo/.
+if (in_array($url[1], ["demo"])) {
+    $demo_name = $url[2];
+    include("controller/demo.php");
+    die;
+}
+
+
 // TODO: make categories & projects pages.
 // If matches HTML pages (non Markdown) route to its controller.
-//if (in_array($url, ["categories", "projects"])) {
+//if (in_array($url[1], ["categories", "projects"])) {
 //    die;
 //}
 
@@ -27,8 +35,8 @@ foreach (scandir("content/pages-md") as $page) {
 }
 
 // If the URL corresponds to a page.
-if (array_search($url, $pages_slugs)) {
-    $file_slug = $url;
+if (array_search($url[1], $pages_slugs)) {
+    $file_slug = $url[1];
     include("controller/pageMarkdown.php");
     die;
 }
@@ -40,8 +48,8 @@ foreach (scandir("content/articles-md") as $file_name) {
 }
 
 // If the URL corresponds to a post.
-if ($file_key = array_search($url, $articles_slugs)) {
-    $file_slug = $url;
+if ($file_key = array_search($url[1], $articles_slugs)) {
+    $file_slug = $url[1];
     $file_name = $articles_names[$file_key];
     include("controller/articleMarkdown.php");
     die;

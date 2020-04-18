@@ -1,12 +1,9 @@
 # alexisphilip.fr
 
-Personnal website.
-
-Current development URL: https://dev.alexisphilip.fr
+Personnal website. https://www.alexisphilip.fr
 
 ## Todo
 
-- add JS which adds meta description & to the elements
 - add /demo/ parser
 - /DOCS maybe ?
 - blog date parser & modify btn;
@@ -18,6 +15,10 @@ Current development URL: https://dev.alexisphilip.fr
 - make JS which adds a copy of the link and modifies the URL to all titles in blog on click
 - article link: <a> tag prevents putting other <a> tag for categories. Need JS for links:
   - or do everything with <a> tag and do hover with JS
+  
+## Emojis
+- add emojis to tags and / or categories
+https://html-css-js.com/html/character-codes/
 
 ## About me
 - add icons to about me page

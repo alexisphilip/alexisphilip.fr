@@ -6,4 +6,4 @@ Disallow: /nogooglebot/
 User-agent: *
 Allow: /
 
-Sitemap: http://dev.alexisphilip.fr/sitemap.xml
+Sitemap: https://www.alexisphilip.fr/sitemap.xml

@@ -5,7 +5,7 @@ I am a full stack developer based in Aix-en-Provence, France. From small program
 widgets to libraries, I focus on maintaining a strict workflow to build clean and reusable environments.
 Creating useful and original content is what I love to do.
 
-I also love to write, about [lots of stuff](https://dev.alexisphilip.fr/blog).
+I also love to write, about [lots of stuff](https://www.alexisphilip.fr/blog).
 
 # Things I like to do
 

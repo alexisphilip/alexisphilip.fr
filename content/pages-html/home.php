@@ -2,7 +2,7 @@
     <div class="sidetext">
         <div>
             <h2 class="lead-title color-font-title">Hi, I'm Alexis!</h2>
-            <p class="lead-description">As a full stack developper I love to program widgets, libraries, and larger
+            <p class="lead-description">I'm full stack developper who loves to program widgets, libraries, and larger
                 scale applications. I write a lot about the things I love, like
                 <a class="link color-blue" href="#<?php //base_url("category/programming") ?>">programming</a>,
                 <a class="link color-blue" href="#<?php //base_url("category/keyboards") ?>">keyboards</a>,
@@ -83,16 +83,21 @@
                     <a class="btn-small color-font-title bold bg-yellow"
                        href="<?= $repository["docs"] ?>">Docs</a>
                 <?php } ?>
-                <?php if (isset($repository["demo"]) && $repository["demo"]) { ?>
+                <?php if (isset($repository["demo"])) {
+                    // "demo" var can be set to "true", to the URL will be the repo.'s name,
+                    // otherwise it will be the string set in this var.
+                    $url = ($repository["demo"] === true ? $repository["name"] : $repository["demo"]); ?>
                     <a class="btn-small color-white bold bg-blue"
-                       href="<?= base_url("demo/" . $repository["demo"]) ?>">Demo</a>
+                       href="<?= base_url("demo/" . $url) ?>">Demo</a>
                 <?php } ?>
-                <a class="btn-small color-font-text bold link-github"
-                   href="https://github.com/alexisphilip/<?= $repository["name"] ?>">
-                    <img class="github-icon" src="<?= img_url("icons/github/GitHub-Mark-32px.png") ?>"
-                         alt="GitHub logo">
-                    GitHub
-                </a>
+                <?php if (isset($repository["github"]) && $repository["github"]) { ?>
+                    <a class="btn-small color-font-text bold link-github"
+                       href="https://github.com/alexisphilip/<?= $repository["name"] ?>">
+                        <img class="github-icon" src="<?= img_url("icons/github/GitHub-Mark-32px.png") ?>"
+                             alt="GitHub logo">
+                        GitHub
+                    </a>
+                <?php } ?>
             </div>
         </div>
     <?php } ?>
