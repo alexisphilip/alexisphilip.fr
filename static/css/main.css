@@ -61,7 +61,12 @@
 .italic {
     font-style: italic;
 }
-
+.underline {
+    text-decoration: underline;
+}
+.text-center {
+    text-align: center;
+}
 
 
 html {
@@ -421,11 +426,37 @@ footer {
     box-shadow: 0 2px 7px rgba(41,41,42,0.3);
     padding: 30px 30px;
     margin: 80px 0 40px 0;
+    display: flex;
+}
+.article-footer-left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 30px;
+}
+    .article-footer-image {
+        border-radius: 1000px;
+        width: 140px;
+        height: 140px;
+    }
+.article-footer-right {
+
 }
     .article-footer-title {
         margin: 0;
     }
 
+
+
+
+
+/* PRISM.JS OVERWRITE */
+pre[class*="language-"],
+code[class*="language-"] {
+    background-color: var(--color-font-text);
+    font-size: 0.95em;
+    text-shadow: none;
+}
 
 
 

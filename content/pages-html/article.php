@@ -7,7 +7,7 @@
             </a>
             <p>
                 <?= (new DateTime($data["file_info"]["date"]))->format("d M\. Y") ?> /
-                <a class="link color-font-text bold" href="<?= $data["file_info"]["slug"] ?>">Edit ✏️</a>
+                <a class="link color-font-text bold" href="https://github.com/alexisphilip/alexisphilip.fr/blob/master/content/articles-md/<?= $data["file_info"]["date"] . "-" . $data["file_info"]["slug"] ?>.md">Edit ✏️</a>
             </p>
         </div>
         <div class="article-tags">
@@ -31,7 +31,15 @@
 <div class="rendered-markdown"></div>
 
 <div class="article-footer">
-    <h2 class="article-footer-title color-white">Hi there! I hope you enjoyed this article.</h2>
-    <p class="color-white">I'm Alexis Philip, a full stack Web developer based in Aix-en-Provence, France.</p>
-    <p class="color-white"><a class="color-white bold" href="<?= base_url("contact") ?>">Contact me</a> or check out <a class="color-white bold" href="<?= base_url("blog") ?>">my latest articles!</a></p>
+    <div class="article-footer-left">
+        <img class="article-footer-image" src="<?= img_url("profile-pic.jpg") ?>" alt="Profile picture">
+    </div>
+    <div class="article-footer-right">
+        <h2 class="article-footer-title color-white">Hi there! I hope you enjoyed this article.</h2>
+        <p class="color-white">I'm Alexis Philip, a full stack Web developer based in Aix-en-Provence, France.</p>
+        <p class="color-white">
+            <a class="btn-medium bg-white color-blue bold" href="<?= base_url("contact") ?>">Contact me</a> or
+            check out <a class="btn-medium bg-white color-blue bold" href="<?= base_url("blog") ?>">my latest articles!</a>
+        </p>
+    </div>
 </div>

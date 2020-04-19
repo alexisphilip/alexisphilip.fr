@@ -4,7 +4,7 @@ Personnal website. https://www.alexisphilip.fr
 
 ## Todo
 
-- update article page
+- links in markdown, code size & color (MODIFY CSS prism theme), 
 - be able to click on buttons
 - add total posts
 
@@ -25,7 +25,6 @@ ARTICLE CSS:
   
 ## Spacing
 - even header & footer spacing
-
   
 ## Emojis
 - possiblity to add custom images / logos / icons instead of emojis (for Cubing & 3D printing...)
@@ -44,7 +43,7 @@ ARTICLE CSS:
 
 ## SEO
 - ideally, add most favicon to homepage (really useful?)
-- cache control: maybe activate apache2 cache mod?
+- cache control: maybe activate apache2 cache mod? (reactivate php caching at start of app for better SEO?)
 
 ## Articles
 

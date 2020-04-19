@@ -4,10 +4,10 @@
             <h2 class="lead-title color-font-title">Hi, I'm Alexis!</h2>
             <p class="lead-description">I'm full stack developper who loves to program widgets, libraries, and larger
                 scale applications. I write a lot about the things I love, like
-                <a class="link color-blue" href="#<?php //base_url("category/programming") ?>">programming</a>,
-                <a class="link color-blue" href="#<?php //base_url("category/keyboards") ?>">keyboards</a>,
-                <a class="link color-blue" href="#<?php //base_url("category/3d-printing") ?>">3D printing</a>,
-                <a class="link color-blue" href="#<?php //base_url("category/3d-printing") ?>">Rubik's Cubes</a>,
+                <a class="link color-blue" href="<?= base_url("category/programming") ?>">programming</a>,
+                <a class="link color-blue" href="<?= base_url("category/keyboards") ?>">keyboards</a>,
+                <a class="link color-blue" href="<?= base_url("category/3d-printing") ?>">3D printing</a>,
+                <a class="link color-blue" href="<?= base_url("category/cubing") ?>">Rubik's Cubes</a>,
                 and more.</p>
             <a class="btn-small color-font-text lead-btn" href="https://github.com/alexisphilip">GitHub</a>
         </div>

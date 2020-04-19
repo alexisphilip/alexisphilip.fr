@@ -27,6 +27,7 @@ class MarkdownModel
 
                 // Extracts its header info.
                 $article_info_tmp = self::extractData($file_content)["file_info"];
+
                 // If filter by category.
                 if ($category) {
                     // If the current file has this category.

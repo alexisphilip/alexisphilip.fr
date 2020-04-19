@@ -15,7 +15,7 @@ if (!$data["category"]) {
 $data["articles"] = MarkdownModel::getArticles(0, $category_slug);
 
 // Sets the page's title.
-RenderManager::setPageTitlePrefix("Articles categories and about things I love");
+RenderManager::setPageTitlePrefix($data["category"]["name"] . " · Category");
 
 // Sets the meta description.
 RenderManager::setMetaDescription("Welcome to my blog. I write articles about programming, technology, 
