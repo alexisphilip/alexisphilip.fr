@@ -355,6 +355,72 @@ footer {
 
 
 
+/* ARTICLE DETAIL */
+.article-header {
+    display: flex;
+    justify-content: space-between;
+    margin: 40px auto 60px auto;
+}
+.article-section-info {
+
+}
+    .article-title {
+        margin: 0;
+        line-height: 1.3em;
+    }
+    .article-author-row,
+    .article-tags {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    .article-author-row {
+        font-size: 0.8em;
+        margin: 10px auto;
+    }
+        .article-author-wrapper {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .article-author-pic {
+            height: 40px;
+            width: 40px;
+            margin-right: 10px;
+            border-radius: 1000px;
+        }
+.article-section-thumbnail {
+    margin-left: 40px;
+}
+    .article-thumbnail-wrapper {
+        --size: 130px;
+        min-height: var(--size);
+        max-height: var(--size);
+        height: var(--size);
+        min-width: var(--size);
+        max-width: var(--size);
+        width: var(--size);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .article-thumbnail {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+    .article-thumbnail-letter {
+        font-size: 6em;
+    }
+
+
+
+.article-footer {
+
+}
+
+
+
 
 /* Header */
 

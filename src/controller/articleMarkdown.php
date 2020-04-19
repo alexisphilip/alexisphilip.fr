@@ -23,4 +23,4 @@ AssetsManager::loadVendorsJsFiles("showdown.js");
 AssetsManager::loadJS("renderHTML.js");
 
 // Loads the selected template and renders it.
-RenderManager::loadTemplate("markdown", "", $data);
+RenderManager::loadTemplate("markdown", "article", $data);

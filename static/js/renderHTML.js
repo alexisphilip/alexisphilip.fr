@@ -1,4 +1,4 @@
-let content = document.querySelector(".inner-main"),
+let content = document.querySelector(".rendered-markdown"),
     raw_markdown = document.querySelector(".raw-markdown"),
     converter = new showdown.Converter();
 

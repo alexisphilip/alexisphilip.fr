@@ -6,7 +6,7 @@
         "life"
     ],
     "tags": [
-        "work"
+        "blog"
     ]
 }
 

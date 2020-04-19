@@ -6,6 +6,7 @@ Personnal website. https://www.alexisphilip.fr
 
 - update article page
 - be able to click on buttons
+- add total posts
 
 ARTICLE CSS:
 - center images
@@ -30,7 +31,7 @@ ARTICLE CSS:
 - possiblity to add custom images / logos / icons instead of emojis (for Cubing & 3D printing...)
 
 ## About me
-- add icons to about me page
+- add icons to about me page (and update links)
 - maybe links to categories or GitHub (3d printing?)
 
 ## Animation
@@ -39,8 +40,7 @@ ARTICLE CSS:
 - background gradient animation?
   https://www.gradient-animator.com/
 
-## Social
-- add IG / Twitter, etc
+## 3D add to GitHub
 
 ## SEO
 - ideally, add most favicon to homepage (really useful?)

@@ -14,7 +14,7 @@
     </div>
     <div class="sidecard card-colored">
         <div>
-            <img class="profile-pic" src="<?= img_url("profile-pic.png") ?>" alt="Profile pic">
+            <img class="profile-pic" src="<?= img_url("profile-pic.jpg") ?>" alt="Profile pic">
             <p class="bold color-white">Checkout my blog here!</p>
             <a class="btn-medium bg-white color-font-text bold" href="<?= base_url("blog") ?>">All articles</a>
         </div>

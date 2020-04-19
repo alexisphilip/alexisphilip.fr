@@ -27,7 +27,7 @@
     <!-- The layout's content. -->
     <main>
         <div class="inner-main">
-
+            <?php include("content/pages-html/" . $file_path . ".php"); ?>
         </div>
     </main>
 
