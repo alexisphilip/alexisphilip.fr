@@ -31,7 +31,7 @@
 <div class="rendered-markdown"></div>
 
 <div class="article-footer">
-    <h2>Hi there! I hope you enjoyed this article.</h2>
-    <p>I'm Alexis Philip, a full stack Web developer.</p>
-    <p><a href="#">Contact me</a> or check out <a href="#">my latest articles!</a></p>
+    <h2 class="article-footer-title color-white">Hi there! I hope you enjoyed this article.</h2>
+    <p class="color-white">I'm Alexis Philip, a full stack Web developer based in Aix-en-Provence, France.</p>
+    <p class="color-white"><a class="color-white bold" href="<?= base_url("contact") ?>">Contact me</a> or check out <a class="color-white bold" href="<?= base_url("blog") ?>">my latest articles!</a></p>
 </div>
