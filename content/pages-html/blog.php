@@ -1,4 +1,4 @@
-<h2 class="large-title">Categories</h2>
+<h2 class="title-large">Categories</h2>
 
 <div class="card-colored categories">
     <a class="btn-medium bg-white color-font-text hover-grey bold" href="#">Programming</a>

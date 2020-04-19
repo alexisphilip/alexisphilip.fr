@@ -4,11 +4,14 @@ Personnal website. https://www.alexisphilip.fr
 
 ## Todo
 
+- make see all btn
+- make categories page
+- make tags page
 
 
 - /DOCS maybe ?
 - blog date parser & modify btn;
-- make categories & projects pages.
+- make projects pages.
 - make 404 page;
 
 - documentent all functions;
@@ -16,6 +19,10 @@ Personnal website. https://www.alexisphilip.fr
 - make JS which adds a copy of the link and modifies the URL to all titles in blog on click
 - article link: <a> tag prevents putting other <a> tag for categories. Need JS for links:
   - or do everything with <a> tag and do hover with JS
+  
+## Spacing
+- even header & footer spacing
+
   
 ## Emojis
 - add emojis to tags and / or categories
@@ -35,3 +42,7 @@ https://html-css-js.com/html/character-codes/
 ## SEO
 - ideally, add most favicon to homepage (really useful?)
 - cache control: maybe activate apache2 cache mod?
+
+## Articles
+
+Add in keyboards category links to the different kind of keyboard. 

@@ -21,7 +21,7 @@
     </div>
 </div>
 
-<h1>Latest articles</h1>
+<h1 class="title-with-btn">Latest articles <a class="btn-small bg-light color-font-text" href="<?= base_url("blog") ?>">See all</a></h1>
 
 <div class="list">
     <?php foreach ($data["articles"] as $post) { ?>
@@ -57,7 +57,7 @@
 </div>
 
 
-<h2 class="large-title">My open source projects</h2>
+<h2 class="title-large">My open source projects</h2>
 
 <div class="large-list">
 

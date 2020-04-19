@@ -33,6 +33,9 @@
 .color-yellow {
     color: var(--color-yellow);
 }
+.bg-light {
+    background: var(--bg-light);
+}
 .bg-white {
     background: white;
 }
@@ -120,7 +123,7 @@ footer {
 /* Main */
 
 .inner-main {
-    margin: 40px auto;
+    margin: 20px auto 40px auto;
 }
 
 
@@ -149,7 +152,7 @@ footer {
     text-decoration: none;
     padding: 3px 9px;
     border-radius: 5px;
-    font-size: 0.8em;
+    font-size: 15px;
     margin: auto 10px;
 }
 
@@ -163,10 +166,15 @@ footer {
 
 
 
+/* TITLE STYLING */
 /* Large title replicating h1 size */
-.large-title {
+.title-large {
     font-size: 35.2px;
     color: var(--color-font-title);
+}
+.title-with-btn {
+    display: flex;
+    align-items: center;
 }
 
 
@@ -176,6 +184,7 @@ footer {
 .lead {
     display: flex;
     justify-content: space-between;
+    margin-top: 30px;
 }
 
 .sidetext {
