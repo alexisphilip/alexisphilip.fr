@@ -4,8 +4,12 @@ Personnal website. https://www.alexisphilip.fr
 
 ## Todo
 
-- make categories page
-- make tags page
+- update article page
+- be able to click on buttons
+
+ARTICLE CSS:
+- center images
+- animate / add hover to links
 
 - /DOCS maybe ?
 - blog date parser & modify btn;

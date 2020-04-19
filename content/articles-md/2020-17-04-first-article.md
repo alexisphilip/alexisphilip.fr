@@ -1,9 +1,8 @@
 {
     "date": "2020-04-17",
-    "title": "First article!",
+    "title": "My first article!",
     "slug": "first-article",
     "categories": [
-        "programming",
         "life"
     ],
     "tags": [
@@ -11,7 +10,6 @@
     ]
 }
 
-# My first article!
 
 This is the first article on my blog.
 
