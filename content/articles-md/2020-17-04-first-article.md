@@ -3,7 +3,8 @@
     "title": "First article!",
     "slug": "first-article",
     "categories": [
-        "programming"
+        "programming",
+        "life"
     ],
     "tags": [
         "work"

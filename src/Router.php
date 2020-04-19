@@ -22,6 +22,13 @@ if (in_array($url[1], ["blog"])) {
     die;
 }
 
+// Category "/category/xxx".
+if (in_array($url[1], ["category"])) {
+    $category_slug = $url[2];
+    include("controller/category.php");
+    die;
+}
+
 // Demo section /content/demo/.
 if (in_array($url[1], ["demo"])) {
     $demo_name = $url[2];
