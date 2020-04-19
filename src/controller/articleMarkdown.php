@@ -1,8 +1,8 @@
 <?php
 
-include("src/model/markdownModel.php");
+include("src/model/MarkdownModel.php");
 
-$data = BlogModel::getFile("article", $file_name);
+$data = MarkdownModel::getFile("article", $file_name);
 
 // Sets the page's title.
 // TODO: fix title formatting with helper function (always more than 20 chars?).

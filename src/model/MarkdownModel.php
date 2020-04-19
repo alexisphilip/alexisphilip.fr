@@ -1,6 +1,6 @@
 <?php
 
-class BlogModel
+class MarkdownModel
 {
     /**
      * Retrieves n articles, and orders them by date DESC.

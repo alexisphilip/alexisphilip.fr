@@ -1,8 +1,8 @@
 <?php
 
-include("src/model/markdownModel.php");
+include("src/model/MarkdownModel.php");
 
-$data = BlogModel::getFile("page", $file_slug . ".md");
+$data = MarkdownModel::getFile("page", $file_slug . ".md");
 
 // TODO: fix title formatting with helper function (always more than 20 chars?).
 if ($file_slug == "contact") {

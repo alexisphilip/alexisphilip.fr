@@ -1,7 +1,7 @@
 <?php
 
-include("src/model/markdownModel.php");
-include("src/model/repositoryModel.php");
+include("src/model/MarkdownModel.php");
+include("src/model/RepositoryModel.php");
 
 // Sets the page's title.
 RenderManager::setPageTitleSuffix("Full stack web developer");
@@ -13,10 +13,10 @@ Contact me or checkout my open sources projects, articles and posts in my blog."
 $file_path = "content/pages-html/home.php";
 
 // Gets the 5 latest articles.
-$data["articles"] = BlogModel::getArticles(5);
+$data["articles"] = MarkdownModel::getArticles(5);
 
 // Gets all the repositories.
-$data["repositories"] = getRepositories();
+$data["repositories"] = RepositoryModel::getRepositories();
 
 // Loads the selected template and renders it.
 RenderManager::loadTemplate("html", $file_path, $data);

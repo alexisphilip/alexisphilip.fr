@@ -1,6 +1,7 @@
 <?php
 
-include("src/model/markdownModel.php");
+include("src/model/MarkdownModel.php");
+include("src/model/CategoryModel.php");
 
 // Sets the page's title.
 RenderManager::setPageTitlePrefix("Articles and posts about things I love");
@@ -11,8 +12,11 @@ keyboards, 3D printing, Rubik's Cubes, piano, and many more.");
 
 $file_path = "content/pages-html/blog.php";
 
+// Gets all the categories.
+$data["categories"] = CategoryModel::getCategories();
+
 // Gets all the articles.
-$data["articles"] = BlogModel::getArticles();
+$data["articles"] = MarkdownModel::getArticles();
 
 // Loads the selected template and renders it.
 RenderManager::loadTemplate("html", $file_path, $data);

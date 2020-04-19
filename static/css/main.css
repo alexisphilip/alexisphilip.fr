@@ -228,6 +228,7 @@ footer {
 /* Colored card */
 .card-colored {
     background-image: linear-gradient(to right top, #ffe360, #ffcf5b, #ffbc5a, #ffa95c, #ff9760);
+    /*background-image: linear-gradient(to right top, #4c83d5, #2097dd, #00aade, #1cbadb, #4cc9d5);*/
     box-shadow: 0 2px 7px rgba(41,41,42,0.3);
     padding: 20px;
     border-radius: 10px;

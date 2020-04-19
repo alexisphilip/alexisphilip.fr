@@ -1,57 +1,55 @@
-{
-  "data": [
-    {
-      "name": "birdy",
-      "emoji": "\uD83D\uDC26",
-      "description": "A simple and yet complete PHP framework.",
-      "docs": "https://birdy.alexisphilip.fr/#/",
-      "github": true
-    },
-    {
-      "name": "lighty-colorpicker",
-      "emoji": "\uD83C\uDFA8",
-      "description": "Complete JS color picker.",
-      "demo": true,
-      "github": true
-    },
-    {
-      "name": "Casio-F-91W",
-      "emoji": "⌚",
-      "description": "The legendary F-91W, online version.",
-      "demo": true,
-      "github": true
-    },
-    {
-      "name": "lighty-datepicker",
-      "emoji": "\uD83D\uDCC6",
-      "description": "Simple JS date picker library.",
-      "demo": true,
-      "github": true
-    },
-    {
-      "name": "subnet-calculator",
-      "emoji": "\uD83D\uDD22",
-      "description": "Easy to use subnet calculator in JS.",
-      "demo": true,
-      "github": true
-    },
-    {
-      "name": "lighty-clipboard",
-      "emoji": "\uD83D\uDCCE",
-      "description": "Simple JS copy / page library.",
-      "github": true
-    },
-    {
-      "name": "lighty-slide",
-      "emoji": "\uD83C\uDF0A",
-      "description": "Simple JS DOM element sliding library.",
-      "github": true
-    },
-    {
-      "name": "alexisphilip.fr",
-      "emoji": "\uD83D\uDC66",
-      "description": "Personnal website running PHP & JS.",
-      "github": true
-    }
-  ]
-}
+[
+  {
+    "name": "birdy",
+    "emoji": "\uD83D\uDC26",
+    "description": "A simple and yet complete PHP framework.",
+    "docs": "https://birdy.alexisphilip.fr/#/",
+    "github": true
+  },
+  {
+    "name": "lighty-colorpicker",
+    "emoji": "\uD83C\uDFA8",
+    "description": "Complete JS color picker.",
+    "demo": true,
+    "github": true
+  },
+  {
+    "name": "Casio-F-91W",
+    "emoji": "⌚",
+    "description": "The legendary F-91W, online version.",
+    "demo": true,
+    "github": true
+  },
+  {
+    "name": "lighty-datepicker",
+    "emoji": "\uD83D\uDCC6",
+    "description": "Simple JS date picker library.",
+    "demo": true,
+    "github": true
+  },
+  {
+    "name": "subnet-calculator",
+    "emoji": "\uD83D\uDD22",
+    "description": "Easy to use subnet calculator in JS.",
+    "demo": true,
+    "github": true
+  },
+  {
+    "name": "lighty-clipboard",
+    "emoji": "\uD83D\uDCCE",
+    "description": "Simple JS copy / page library.",
+    "github": true
+  },
+  {
+    "name": "lighty-slide",
+    "emoji": "\uD83C\uDF0A",
+    "description": "Simple JS DOM element sliding library.",
+    "github": true
+  },
+  {
+    "name": "alexisphilip.fr",
+    "emoji": "\uD83D\uDC66",
+    "description": "Personnal website running PHP & JS.",
+    "github": true
+  }
+]

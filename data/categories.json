@@ -1,24 +1,34 @@
 [
   {
+    "emoji": "\uD83D\uDCBB",
     "name": "Programming",
     "slug": "programming",
     "description": "Everything about programming which I like to talk about."
   },
   {
+    "emoji": "⌨",
     "name": "Keyboards",
     "slug": "keyboards",
     "description": "Keyboards: ergonomic ones, ortholinear ones, columnar staggered ones, you name it.<br>These names can scare you, but <i>worry</i>, I'm explaining it all in the articles below."
   },
   {
+    "emoji": "⛩",
     "name": "3D printing",
     "slug": "3d-printing"
   },
   {
+    "emoji": "\uD83C\uDFB2",
     "name": "Rubik's Cube (cubing)",
     "slug": "cubing"
   },
   {
-    "name": "piano",
+    "emoji": "\uD83C\uDFB9",
+    "name": "Piano",
     "slug": "piano"
+  },
+  {
+    "emoji": "\uD83D\uDC66",
+    "name": "Life",
+    "slug": "life"
   }
 ]

@@ -4,10 +4,8 @@ Personnal website. https://www.alexisphilip.fr
 
 ## Todo
 
-- make see all btn
 - make categories page
 - make tags page
-
 
 - /DOCS maybe ?
 - blog date parser & modify btn;
@@ -25,8 +23,7 @@ Personnal website. https://www.alexisphilip.fr
 
   
 ## Emojis
-- add emojis to tags and / or categories
-https://html-css-js.com/html/character-codes/
+- possiblity to add custom images / logos / icons instead of emojis (for Cubing & 3D printing...)
 
 ## About me
 - add icons to about me page
@@ -35,6 +32,8 @@ https://html-css-js.com/html/character-codes/
 ## Animation
 - add moving letters library on different elements such as h1, h2 titles and others. 
 - maybe to links too?
+- background gradient animation?
+  https://www.gradient-animator.com/
 
 ## Social
 - add IG / Twitter, etc
