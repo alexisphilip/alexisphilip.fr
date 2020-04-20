@@ -4,9 +4,16 @@ Personnal website. https://www.alexisphilip.fr
 
 ## Todo
 
+Add "how to commit" in readme.md
+with alexisphilip-base-url.json
+find a way not commit my IP and show change default URL
+
+- update robots & sitemap
 - links in markdown, code size & color (MODIFY CSS prism theme), 
 - be able to click on buttons
 - add total posts
+
+- add description to all categories.
 
 ARTICLE CSS:
 - center images
@@ -38,6 +45,9 @@ ARTICLE CSS:
 - maybe to links too?
 - background gradient animation?
   https://www.gradient-animator.com/
+  
+## Multi theme website
+https://keep.google.com/#NOTE/1TiZFs7K08_uLxA5wu64sQfXwnucJDbBIs7cW6Nu3kKZGm0-p8Q2VtpB-MgpVyfFZ
 
 ## 3D add to GitHub
 
