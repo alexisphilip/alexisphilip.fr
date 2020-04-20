@@ -1,5 +1,6 @@
 <?php
 
+include("src/model/BlogModel.php");
 include("src/model/MarkdownModel.php");
 include("src/model/CategoryModel.php");
 
@@ -8,6 +9,9 @@ $data["categories"] = CategoryModel::getCategories();
 
 // Gets all the articles.
 $data["articles"] = MarkdownModel::getArticles();
+
+// Get total number of articles.
+$data["total_articles"] = BlogModel::getTotalArticles();
 
 // Sets the page's title.
 RenderManager::setPageTitlePrefix("Articles and posts about things I love.");

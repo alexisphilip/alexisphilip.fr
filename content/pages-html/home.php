@@ -21,7 +21,7 @@
     </div>
 </div>
 
-<h1 class="title-with-btn">Latest articles <a class="btn-small bg-light color-font-text" href="<?= base_url("blog") ?>">See all</a></h1>
+<h1 class="title-with-aside">Latest articles <a class="btn-small bg-light color-font-text" href="<?= base_url("blog") ?>">See all</a></h1>
 
 <div class="list">
     <?php foreach ($data["articles"] as $post) { ?>

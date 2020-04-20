@@ -54,6 +54,10 @@
 }
 
 
+.text-medium {
+    font-size: 22px;
+}
+
 
 .bold {
     font-weight: 700;
@@ -180,9 +184,12 @@ footer {
     font-size: 35.2px;
     color: var(--color-font-title);
 }
-.title-with-btn {
+.title-with-aside {
     display: flex;
     align-items: center;
+}
+.title-with-aside span {
+    margin-left: 10px;
 }
 
 
