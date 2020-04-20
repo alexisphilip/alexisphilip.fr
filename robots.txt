@@ -1,9 +1,4 @@
-# Group 1
-User-agent: Googlebot
-Disallow: /nogooglebot/
-
-# Group 2
-User-agent: *
-Allow: /
+User-Agent: *
+Disallow: /static
 
 Sitemap: https://www.alexisphilip.fr/sitemap.xml

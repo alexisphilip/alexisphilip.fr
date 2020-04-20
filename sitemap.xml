@@ -8,43 +8,78 @@
 
 <url>
   <loc>https://www.alexisphilip.fr/</loc>
-  <lastmod>2020-04-17T23:11:34+00:00</lastmod>
+  <lastmod>2020-04-20T20:13:01+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
   <loc>https://www.alexisphilip.fr/about-me</loc>
-  <lastmod>2020-04-17T23:11:34+00:00</lastmod>
+  <lastmod>2020-04-20T20:13:01+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.alexisphilip.fr/blog</loc>
-  <lastmod>2020-04-17T23:11:34+00:00</lastmod>
+  <lastmod>2020-04-20T20:13:01+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.alexisphilip.fr/contact</loc>
-  <lastmod>2020-04-17T23:11:34+00:00</lastmod>
+  <lastmod>2020-04-20T20:13:01+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.alexisphilip.fr/category/programming</loc>
+  <lastmod>2020-04-20T20:13:01+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.alexisphilip.fr/category/keyboards</loc>
+  <lastmod>2020-04-20T20:13:01+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.alexisphilip.fr/category/3d-printing</loc>
+  <lastmod>2020-04-20T20:13:01+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.alexisphilip.fr/category/cubing</loc>
+  <lastmod>2020-04-20T20:13:01+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.alexisphilip.fr/first-article</loc>
-  <lastmod>2020-04-17T23:11:34+00:00</lastmod>
+  <lastmod>2020-04-20T20:13:01+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.alexisphilip.fr/demo/lighty-colorpicker</loc>
-  <lastmod>2020-04-17T23:11:34+00:00</lastmod>
+  <lastmod>2020-04-20T20:13:01+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.alexisphilip.fr/demo/F-91W</loc>
-  <lastmod>2020-04-17T23:11:34+00:00</lastmod>
+  <loc>https://www.alexisphilip.fr/demo/Casio-F-91W</loc>
+  <lastmod>2020-04-20T20:13:01+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.alexisphilip.fr/demo/lighty-datepicker</loc>
-  <lastmod>2020-04-17T23:11:34+00:00</lastmod>
+  <lastmod>2020-04-20T20:13:01+00:00</lastmod>
   <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.alexisphilip.fr/demo/subnet-calculator</loc>
+  <lastmod>2020-04-20T20:13:01+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.alexisphilip.fr/category/piano</loc>
+  <lastmod>2020-04-20T20:13:01+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.alexisphilip.fr/category/life</loc>
+  <lastmod>2020-04-20T20:13:01+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 
 
