@@ -4,10 +4,10 @@
             <h2 class="lead-title color-font-title">Hi, I'm Alexis!</h2>
             <p class="lead-description">I'm full stack developper who loves to program widgets, libraries, and larger
                 scale applications. I write a lot about the things I love, like
-                <a class="link color-blue" href="<?= base_url("category/programming") ?>">programming</a>,
-                <a class="link color-blue" href="<?= base_url("category/keyboards") ?>">keyboards</a>,
-                <a class="link color-blue" href="<?= base_url("category/3d-printing") ?>">3D printing</a>,
-                <a class="link color-blue" href="<?= base_url("category/cubing") ?>">Rubik's Cubes</a>,
+                <a class="bold color-blue" href="<?= base_url("category/programming") ?>">programming</a>,
+                <a class="bold color-blue" href="<?= base_url("category/keyboards") ?>">keyboards</a>,
+                <a class="bold color-blue" href="<?= base_url("category/3d-printing") ?>">3D printing</a>,
+                <a class="bold color-blue" href="<?= base_url("category/cubing") ?>">Rubik's Cubes</a>,
                 and more.</p>
             <a class="btn-small color-font-text lead-btn" href="https://github.com/alexisphilip">GitHub</a>
         </div>
@@ -35,7 +35,7 @@
                                  src="<?= base_url("content/thumbnails/") . $post["thumbnail"] ?>"
                                  alt="Post's thumbnail">
                         <?php } else { ?>
-                            <div class="list-el-thumbnail-letter">
+                            <div class="list-el-thumbnail-letter color-gradient-blue">
                                 <?= substr($post["title"], 0, 1) ?>
                             </div>
                         <?php } ?>
@@ -70,7 +70,7 @@
                 <div class="project-text">
                     <p class="project-title">
                         <?php if (isset($repository["github"])) { ?>
-                        <a class="link color-blue"
+                        <a class="link color-blue bold"
                            href="https://github.com/alexisphilip/<?= $repository["name"] ?>">
                             <?= $repository["emoji"] ?>
                             <?= $repository["name"] ?>
@@ -87,7 +87,7 @@
             </div>
             <div class="project-links">
                 <?php if (isset($repository["docs"]) && $repository["docs"]) { ?>
-                    <a class="btn-small color-font-title bold bg-yellow"
+                    <a class="btn-small color-font-text bold bg-yellow"
                        href="<?= $repository["docs"] ?>">Docs</a>
                 <?php } ?>
                 <?php if (isset($repository["demo"])) {

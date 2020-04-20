@@ -43,6 +43,25 @@
     color: white;
 }
 
+
+/* TEST */
+.bg-orange {
+    background: #ff9760;
+}
+
+
+/* GRADIENT */
+
+.color-gradient-blue {
+    background: -webkit-linear-gradient(right top, #4c83d5, #4cc9d5);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.bg-gradient-blue {
+    /*background-image: linear-gradient(to right top, #4c83d5, #2097dd, #00aade, #1cbadb, #4cc9d5);*/
+    background: linear-gradient(to left top, #4c83d5, #4cc9d5);
+}
+
 /* HOVER */
 .hover-grey:hover {
     background: var(--bg-light);
@@ -242,13 +261,36 @@ footer {
 
 /* Colored card */
 .card-colored {
-    background-image: linear-gradient(to right top, #ffe360, #ffcf5b, #ffbc5a, #ffa95c, #ff9760);
-    /*background-image: linear-gradient(to right top, #4c83d5, #2097dd, #00aade, #1cbadb, #4cc9d5);*/
     box-shadow: 0 2px 7px rgba(41,41,42,0.3);
     padding: 20px;
     border-radius: 10px;
+
+    /*background-image: linear-gradient(to right top, #ffe360, #ffcf5b, #ffbc5a, #ffa95c, #ff9760);*/
+    /* Last color is the before-last color of the gradient just above. */
+    background: linear-gradient(to right top, #ffe360, #ff9760);
+    background-size: 200% 200%;
+
+    --animation-length: 4s;
+    -webkit-animation: gradient-animation var(--animation-length) ease infinite;
+    -moz-animation: gradient-animation var(--animation-length) ease infinite;
+    animation: gradient-animation var(--animation-length) ease infinite;
 }
 
+@-webkit-keyframes gradient-animation {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-moz-keyframes gradient-animation {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes gradient-animation {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
 
 
 
@@ -367,6 +409,21 @@ footer {
 
 
 
+/* ARTICLE PAGE */
+.rendered-markdown a {
+    background: white;
+    color: var(--color-blue);
+    padding: 1px 4px;
+    border-radius: 3px;
+    font-weight: bold;
+}
+.rendered-markdown a:hover {
+    background: var(--bg-blue);
+    color: white;
+}
+
+
+
 /* ARTICLE DETAIL */
 .article-header {
     display: flex;
@@ -428,12 +485,21 @@ footer {
 
 
 .article-footer {
-    background-image: linear-gradient(to right top, #4c83d5, #2097dd, #00aade, #1cbadb, #4cc9d5);
+
     border-radius: 10px;
     box-shadow: 0 2px 7px rgba(41,41,42,0.3);
     padding: 30px 30px;
     margin: 80px 0 40px 0;
     display: flex;
+
+    /*background-image: linear-gradient(to right top, #4c83d5, #2097dd, #00aade, #1cbadb, #4cc9d5);*/
+    background: linear-gradient(to left top, #4c83d5, #4cc9d5);
+    background-size: 200% 200%;
+
+    --animation-length: 4s;
+    -webkit-animation: gradient-animation var(--animation-length) ease infinite;
+    -moz-animation: gradient-animation var(--animation-length) ease infinite;
+    animation: gradient-animation var(--animation-length) ease infinite;
 }
 .article-footer-left {
     display: flex;

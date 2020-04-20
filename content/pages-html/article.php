@@ -22,7 +22,7 @@
                 <img class="article-thumbnail" src="content/thumbnails/<?= $data["file_info"]["thumbnail"] ?>"
                      alt="<?= $data["file_info"]["title"] ?>">
             <?php } else { ?>
-                <div class="article-thumbnail-letter color-blue bold"><?= substr($data["file_info"]["title"], 0, 1) ?></div>
+                <div class="article-thumbnail-letter color-gradient-blue bold"><?= substr($data["file_info"]["title"], 0, 1) ?></div>
             <?php } ?>
         </div>
     </div>

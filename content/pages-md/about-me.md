@@ -9,8 +9,8 @@ I also love to write, about [lots of stuff](https://www.alexisphilip.fr/blog).
 
 # Things I like to do
 
-- Programming;
-- Building things (keyboards, mainly);
-- 3D printing;
-- Piano;
-- Solving weird puzzles, like giant Rubik's Cubes. 
+- Programming 💻;
+- Building things (keyboards ⌨, mainly);
+- 3D printing 🛌;
+- Piano 🎹;
+- Solving weird puzzles, like giant Rubik's Cubes 🎲. 

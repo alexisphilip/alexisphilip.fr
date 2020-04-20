@@ -8,11 +8,6 @@ Add "how to commit" in readme.md
 with alexisphilip-base-url.json
 find a way not commit my IP and show change default URL
 
-- update robots & sitemap
-- links in markdown, code size & color (MODIFY CSS prism theme), 
-- be able to click on buttons
-- add total posts
-
 - add description to all categories.
 
 ARTICLE CSS:
@@ -20,11 +15,10 @@ ARTICLE CSS:
 - animate / add hover to links
 
 - /DOCS maybe ?
-- blog date parser & modify btn;
 - make projects pages.
 - make 404 page;
 
-- documentent all functions;
+- document all functions;
 - sticky header
 - make JS which adds a copy of the link and modifies the URL to all titles in blog on click
 - article link: <a> tag prevents putting other <a> tag for categories. Need JS for links:
@@ -49,6 +43,10 @@ ARTICLE CSS:
 ## Multi theme website
 https://keep.google.com/#NOTE/1TiZFs7K08_uLxA5wu64sQfXwnucJDbBIs7cW6Nu3kKZGm0-p8Q2VtpB-MgpVyfFZ
 
+## Gradient
+- ask people about gradient text
+- ask people about gradient background & animations (maybe review animations)
+
 ## 3D add to GitHub
 
 ## SEO
@@ -56,5 +54,4 @@ https://keep.google.com/#NOTE/1TiZFs7K08_uLxA5wu64sQfXwnucJDbBIs7cW6Nu3kKZGm0-p8
 - cache control: maybe activate apache2 cache mod? (reactivate php caching at start of app for better SEO?)
 
 ## Articles
-
 Add in keyboards category links to the different kind of keyboard. 
