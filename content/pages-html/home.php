@@ -2,7 +2,7 @@
     <div class="sidetext">
         <div>
             <h2 class="lead-title color-font-title">Hi, I'm Alexis!</h2>
-            <p class="lead-description">I'm full stack developper who loves to program widgets, libraries, and larger
+            <p class="lead-description">I'm a full stack developper who loves to program widgets, libraries, and larger
                 scale applications. I write a lot about the things I love, like
                 <a class="bold color-blue" href="<?= base_url("category/programming") ?>">programming</a>,
                 <a class="bold color-blue" href="<?= base_url("category/keyboards") ?>">keyboards</a>,
@@ -21,7 +21,7 @@
     </div>
 </div>
 
-<h1 class="title-with-aside">Latest articles <a class="btn-small bg-light color-font-text" href="<?= base_url("blog") ?>">See all</a></h1>
+<h1 class="title-with-aside">Latest articles <a class="title-aside btn-small bg-light color-font-text" href="<?= base_url("blog") ?>">See all</a></h1>
 
 <div class="list">
     <?php foreach ($data["articles"] as $post) { ?>

@@ -20,6 +20,7 @@
     <meta property="og:type" content="personnal.blog.website">
     <meta property="og:url" content="<?= "https://" . $_SERVER["HTTP_HOST"] . $_SERVER["REQUEST_URI"] ?>">
     <meta property="og:image" content="<?= img_url("logos/logo-1000x1000.png") ?>">
+
     <!-- Schema.org -->
     <script id="schema_org" type="application/ld+json">
         {
@@ -66,6 +67,9 @@
         <link href="<?= css_url($css_file) ?>" rel="stylesheet" type="text/css">
     <?php } ?>
 
+    <!-- TODO: include this function from config.php -->
+    <script>function l(p) {console.log(p);}</script>
+
     <!-- Include the head content from the selected template. -->
     <?= $head_content ?>
 
@@ -74,9 +78,6 @@
 
 <!-- Include the body content from the selected template. -->
 <?= $body_content ?>
-
-<!-- TODO: include this function from config.php -->
-<script>function l(p) {console.log(p);}</script>
 
 <!-- Include all JS vendors. -->
 <?php foreach (AssetsManager::getVendorsJsFiles() as $vendor_js_file) { ?>

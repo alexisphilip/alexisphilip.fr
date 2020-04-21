@@ -3,11 +3,11 @@
 <!-- Contains the body content. -->
 <?php ob_start(); ?>
 
-    <!-- Include main CSS. -->
-    <link href="<?= css_url("main.css") ?>" rel="stylesheet">
+<!-- Include main CSS. -->
+<link href="<?= css_url("main.css") ?>" rel="stylesheet">
 
-    <!-- Include Google Font: Roboto. -->
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,400&display=swap"
+<!-- Include Google Font: Roboto. -->
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,400&display=swap"
       rel="stylesheet" type="text/css">
 
 <?php $head_content = ob_get_clean(); ?>
@@ -44,6 +44,8 @@
     </div>
 
 </div>
+
+<script src="<?= js_url("animate-letters.js") ?>"></script>
 
 <?php $body_content = ob_get_clean(); ?>
 

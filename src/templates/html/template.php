@@ -40,6 +40,8 @@
 
 </div>
 
+<script src="<?= js_url("animate-letters.js") ?>"></script>
+
 <?php $body_content = ob_get_clean(); ?>
 
 <!-- Includes the global page layout. -->

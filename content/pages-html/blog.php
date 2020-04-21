@@ -6,7 +6,7 @@
     <?php } ?>
 </div>
 
-<h1 class="title-with-aside">All articles <span class="btn-small bg-light color-font-text"><?= $data["total_articles"] ?></span></h1>
+<h1 class="title-with-aside">All articles <span class="title-aside btn-small bg-light color-font-text"><?= $data["total_articles"] ?></span></h1>
 
 <div class="list">
     <?php foreach ($data["articles"] as $article) { ?>
