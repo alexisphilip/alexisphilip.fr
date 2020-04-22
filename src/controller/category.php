@@ -8,7 +8,8 @@ $data["category"] = CategoryModel::categorySlugExists($category_slug);
 
 // If category is not found.
 if (!$data["category"]) {
-    header("Location: " . base_url("404"));
+    // If not a page or a post, then error 404.
+    include("src/controller/404.php");
 }
 
 // Retrieves all the articles in the given category.

@@ -4,6 +4,8 @@ Personnal website. https://www.alexisphilip.fr
 
 ## Todo
 
+404 EE: large terminal
+
 Add "how to commit" in readme.md
 with alexisphilip-base-url.json
 find a way not commit my IP and show change default URL

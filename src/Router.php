@@ -70,4 +70,4 @@ if ($file_key = array_search($url[1], $articles_slugs)) {
 }
 
 // If not a page or a post, then error 404.
-p("Error 404", "error");
+include("src/controller/404.php");

@@ -7,7 +7,7 @@ Creating useful and original content is what I love to do.
 
 I also love to write, about [lots of stuff](https://www.alexisphilip.fr/blog).
 
-# Things I like to do
+## Things I like to do
 
 - Programming 💻;
 - Building things (keyboards ⌨, mainly);
