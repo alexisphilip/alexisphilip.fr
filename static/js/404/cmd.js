@@ -22,8 +22,6 @@ class Cmd
         let input = document.querySelector(".terminal-input");
         input.focus();
 
-        input.value = "dcrypt -p eiH3aeL2am9ieri3 -k 42";
-
         // Defines the bash history.
         let bash_history = [];
         // Defines the current position in the history.

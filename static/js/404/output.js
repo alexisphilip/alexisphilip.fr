@@ -1,8 +1,5 @@
-
-class Output
-{
-    static write(text)
-    {
+class Output {
+    static write(text) {
         if (text === "") text = "&nbsp;";
 
         let line_text = "" +
@@ -11,10 +8,10 @@ class Output
             "</div>";
 
         document.querySelector(".terminal-output").insertAdjacentHTML("beforeend", line_text);
+        this.scrollBottom();
     }
 
-    static writeCommand(text)
-    {
+    static writeCommand(text) {
         let line_text = "" +
             "<div class='line'>\n" +
             "  <span class='server-name'>404@alexisphilip.fr</span>:<span class='terminal-tilde'>~</span>#" +
@@ -22,15 +19,15 @@ class Output
             "</div>";
 
         document.querySelector(".terminal-output").insertAdjacentHTML("beforeend", line_text);
+        this.scrollBottom();
     }
 
-    static writeInput(text)
-    {
+    static writeInput(text) {
         document.querySelector(".terminal-input").value = text;
+        this.scrollBottom();
     }
 
-    static smartWrite(text)
-    {
+    static smartWrite(text) {
         let max_padding = 0;
 
         // For each first element of lines, get the longest element's length (to calculate padding).
@@ -45,5 +42,11 @@ class Output
             padding = "&nbsp;".repeat(padding);
             this.write(text[i][0] + padding + text[i][1]);
         }
+        this.scrollBottom();
+    }
+
+    static scrollBottom() {
+        let terminal = document.querySelector(".terminal");
+        terminal.scrollTop = terminal.scrollHeight;
     }
 }
