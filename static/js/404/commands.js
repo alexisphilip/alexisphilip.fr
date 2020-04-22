@@ -1,13 +1,12 @@
 class Commands {
 
-
     // help
     help(args) {
         Output.write("Type any command followed by <strong>-h</strong> or <strong>--help</strong> to get its manual.");
         Output.write("");
         Output.smartWrite([
             ["cat", "- Concatenates a file to standard output."],
-            ["dcrypt", "- Decrypts, something. You find out..."],
+            ["dcrypt", "- Decrypts something. You find out..."],
             ["hi", "- Says hi."],
             ["ls", "- Lists directory content alphabetically."],
             ["ping", "- Pong."],
@@ -15,20 +14,61 @@ class Commands {
     }
 
     isHelp(args) {
-        if (["-h", "--help", "?"].includes(args[0])) {
-            return true;
-        } else {
-            return false;
-        }
+        return ["-h", "--help", "?"].includes(args[0]);
     }
 
     cat(args) {
-        Output.write();
+
+        if (this.isHelp(args)) {
+            Output.write("Concatenates a file to standard output.");
+            Output.write("USAGE: cat [FILE_NAME]");
+        } else if (args[0]) {
+            let file = FakeDirectory.getFile(args[0]);
+            // If a file exits.
+            if (file) {
+                Output.write(file.content);
+            } else {
+                Output.write("cat: " + args[0] + ": No such file or directory");
+            }
+        } else {
+            Output.write("cat: no file given");
+            Output.write("Try 'cat --help' for more information.");
+        }
+
+        // Output.write();
     }
 
     dcrypt(args) {
         let answer = "Answer to the Ultimate Question of Life, the Universe, and Everything",
             link = "https://www.youtube.com/watch?v=dQw4w9WgXcQ";
+
+        // If first arg is help.
+        if (this.isHelp(args)) {
+            Output.write("Decrypts, something. You find out...")
+            Output.write("USAGE: decrypt -p [phrase] -k [KEY]");
+            Output.write("");
+            Output.write("Mandatory argument");
+            Output.smartWrite([
+                ["-p", "- Phrase de decrypt."],
+                ["-k", "- Decrypting key."]
+            ]);
+        } // If no args.
+        else if (args.length < 4) {
+            Output.write("dcrypt: missing arguments");
+            Output.write("Try 'dcrypt --help' for more information.");
+        } // If other args are correct.
+        else if (args[0] === "-p" && args[2] === "-k") {
+            // Is decrypting is correct
+            if (args[1] === "eiH3aeL2am9ieri3" && args[3] === "42") {
+                // TODO: make animation where is fakes being decrypted, with ... and wait...
+                Output.write("<a href='" + link + "'>" + answer + "</a>");
+                Output.write('<iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>');
+            } else {
+                Output.write("Decryption failed : wong key or phrase.");
+            }
+        } else {
+
+        }
     }
 
     hi(args) {
@@ -41,7 +81,7 @@ class Commands {
             Output.write("Lists directory content alphabetically.");
             Output.write("USAGE: ls [OPTION]");
             Output.write("");
-            Output.write("Mandatory argument");
+            Output.write("Non-mandatory argument");
             Output.smartWrite([
                 ["-l", "- Shows rights, owners, size, name."]
             ]);
@@ -66,7 +106,7 @@ class Commands {
             });
 
             Output.smartWrite(output);
-        } // If arg is not recognized
+        } // If arg is not recognized.
         else {
             Output.write("ls: invalid option '" + args[0] + "'");
             Output.write("Try 'ls --help' for more information.");
@@ -78,14 +118,18 @@ class Commands {
     }
 
     redirect(args) {
+        // If first arg is help.
         if (this.isHelp(args)) {
             Output.write("Redirects to a web page.");
+            Output.write("USAGE: redirect [WEB_PAGE]");
             Output.write("E.g.: <strong>redirect /blog</strong>");
             return 0;
-        } else if (typeof args[0] === "undefined") {
-            Output.write("Missing one argument \"location\".");
-            Output.write("E.g.: <strong>redirect /blog</strong>");
-        } else {
+        } // If no args.
+        else if (args.length === 0) {
+            Output.write("redirect: no web page given");
+            Output.write("Try 'redirect --help' for more information.");
+        } // Redirects.
+        else {
             window.location.replace(args[0]);
         }
     }

@@ -43,6 +43,9 @@
         font-family: inherit;
         width: 100%;
     }
+    .terminal-input:focus {
+        outline: 0;
+    }
 </style>
 
 <h1>404 NOT FOUND</h1>

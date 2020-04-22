@@ -14,7 +14,6 @@ class Cmd
     constructor() {
         this.Commands = new Commands();
         this.start();
-        // this.searchCommands("ls");
     }
 
     start()
@@ -23,7 +22,7 @@ class Cmd
         let input = document.querySelector(".terminal-input");
         input.focus();
 
-        input.value = "ls";
+        input.value = "dcrypt -p eiH3aeL2am9ieri3 -k 42";
 
         // Defines the bash history.
         let bash_history = [];
@@ -65,14 +64,12 @@ class Cmd
                     // Search if the command exists.
                     this.searchCommands(command);
                 }
-                l(bash_history)
             }
 
             // If up arrow is pressed.
             if (evt["keyCode"] === 38) {
                 if (bash_position < bash_history.length - 1)
                     bash_position++;
-                l(bash_position)
                 if (bash_history.length > 0) {
                     Output.writeInput(bash_history[bash_position]);
                 }
@@ -81,7 +78,6 @@ class Cmd
             if (evt["keyCode"] === 40) {
                 if (bash_position >= 0)
                     bash_position--;
-                l(bash_position)
                 if (bash_position === -1 || bash_history.length === 0) {
                     Output.writeInput("");
                 } else {
@@ -93,8 +89,6 @@ class Cmd
 
     searchCommands(command)
     {
-        // command = "help qsdf d";
-
         let split_command = command.split(" ");
         let args = [];
 
