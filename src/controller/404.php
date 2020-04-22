@@ -3,6 +3,7 @@
 // Sets the HTTP response code to 404.
 http_response_code(404);
 
+AssetsManager::loadJS("404/fake-directory.js");
 AssetsManager::loadJS("404/output.js");
 AssetsManager::loadJS("404/commands.js");
 AssetsManager::loadJS("404/cmd.js");

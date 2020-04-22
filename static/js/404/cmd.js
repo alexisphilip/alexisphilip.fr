@@ -5,13 +5,16 @@
 //  make arrow up / down search for last input
 //  don't force focus the input but when character entered, put in the input.
 //  ls -> make secret file? with meme inside?
+//  chown, chmod?
+//  dcrypt -> déchiffre l'algo de César
+//  ping... replies ... pong with typewriter effect
 
 class Cmd
 {
     constructor() {
         this.Commands = new Commands();
         this.start();
-        // this.searchCommands("help");
+        // this.searchCommands("ls");
     }
 
     start()
@@ -19,6 +22,8 @@ class Cmd
         // Gets the terminal input.
         let input = document.querySelector(".terminal-input");
         input.focus();
+
+        input.value = "ls";
 
         // Defines the bash history.
         let bash_history = [];
@@ -38,6 +43,9 @@ class Cmd
                 let command = evt.target.value;
                 input.value = "";
 
+                // Resets the bash position.
+                bash_position = -1;
+
                 // If input is empty, just write another line.
                 if (!/\S/.test(command)) {
                     Output.writeCommand("");
@@ -52,8 +60,9 @@ class Cmd
                         bash_history.unshift(command);
                     }
 
-                    // Search if the command exists.
+                    // Outputs the command.
                     Output.writeCommand(command);
+                    // Search if the command exists.
                     this.searchCommands(command);
                 }
                 l(bash_history)
@@ -94,8 +103,12 @@ class Cmd
         split_command.shift();
         args = split_command;
 
+        // If help command.
+        if (["?", "-h", "--help", "help"].includes(command)) {
+            this.Commands.help(args);
+        }
         // If the command exists.
-        if (typeof this.Commands[command] === "function") {
+        else if (typeof this.Commands[command] === "function") {
             // Dynamically call that method.
             this.Commands[command](args);
         } // If the command does not exit.

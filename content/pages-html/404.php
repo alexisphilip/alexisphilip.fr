@@ -1,13 +1,21 @@
 <style>
+    @import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+
     body {
         background: #1B1B1D;
         height: 100%;
         width: 100%;
         padding: 0 40px 40px 40px;
         margin: 0;
+
+        /*font-family: 'Major Mono Display', Consolas, monospace, sans-serif;*/
+        /*font-family: 'VT323', Consolas, monospace, sans-serif;*/
+        /*font-family: 'Share Tech Mono', Consolas, monospace, sans-serif;*/
+        font-family: Consolas, monospace, sans-serif;
+        font-size: 1.3em;
         color: #C1C1C1;
-        font-size: 1.5em;
-        font-family: Consolas, sans-serif;
     }
     * {
         box-sizing: border-box;

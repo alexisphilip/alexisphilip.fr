@@ -3,6 +3,8 @@ class Output
 {
     static write(text)
     {
+        if (text === "") text = "&nbsp;";
+
         let line_text = "" +
             "<div class='line'>\n" +
             "  <span class='output'>" + text + "</span>" +
