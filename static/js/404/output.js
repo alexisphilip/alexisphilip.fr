@@ -22,6 +22,11 @@ class Output
         document.querySelector(".terminal-output").insertAdjacentHTML("beforeend", line_text);
     }
 
+    static writeInput(text)
+    {
+        document.querySelector(".terminal-input").value = text;
+    }
+
     static smartWrite(text)
     {
         let max_padding = 0;
