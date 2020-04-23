@@ -2,12 +2,13 @@
 // TODO
 //  function which cleans white spaces before testing the command (in the first addEventListener).
 //  make a parameter parser (which redirects to the command's help section when --help or -h, etc)
-//  make arrow up / down search for last input
 //  don't force focus the input but when character entered, put in the input.
-//  ls -> make secret file? with meme inside?
 //  chown, chmod?
-//  dcrypt -> déchiffre l'algo de César
+//  cursor:
+//  https://jsbin.com/ehuki3/3/edit?html,js,output
 //  ping... replies ... pong with typewriter effect
+//  ADD typewriter effect
+//  insert Rick smoothly from the bottom as background? would be awesome
 
 class Cmd
 {

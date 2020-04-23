@@ -6,7 +6,7 @@ class Commands {
         Output.write("");
         Output.smartWrite([
             ["cat", "- Concatenates a file to standard output."],
-            ["dcrypt", "- Decrypts something. You find out..."],
+            ["decrypt", "- Decrypts something. You find out..."],
             ["hi", "- Says hi."],
             ["ls", "- Lists directory content alphabetically."],
             ["ping", "- Pong."],
@@ -38,26 +38,26 @@ class Commands {
         // Output.write();
     }
 
-    dcrypt(args) {
+    decrypt(args) {
         let answer = "Answer to the Ultimate Question of Life, the Universe, and Everything",
             link = "https://www.youtube.com/watch?v=dQw4w9WgXcQ";
 
         // If first arg is help.
         if (this.isHelp(args)) {
             Output.write("Decrypts, something. You find out...")
-            Output.write("USAGE: decrypt -p [phrase] -k [KEY]");
+            Output.write("USAGE: decrypt -m [phrase] -k [KEY]");
             Output.write("");
-            Output.write("Mandatory argument");
+            Output.write("Mandatory arguments");
             Output.smartWrite([
-                ["-p", "- Phrase de decrypt."],
+                ["-m", "- Encrypted message."],
                 ["-k", "- Decrypting key."]
             ]);
         } // If no args.
         else if (args.length < 4) {
-            Output.write("dcrypt: missing arguments");
-            Output.write("Try 'dcrypt --help' for more information.");
+            Output.write("decrypt: missing arguments");
+            Output.write("Try 'decrypt --help' for more information.");
         } // If other args are correct.
-        else if (args[0] === "-p" && args[2] === "-k") {
+        else if (args[0] === "-m" && args[2] === "-k") {
             // Is decrypting is correct
             if (args[1] === "eiH3aeL2am9ieri3" && args[3] === "42") {
                 // TODO: make animation where is fakes being decrypted, with ... and wait...

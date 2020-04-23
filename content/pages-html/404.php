@@ -1,7 +1,11 @@
 <style>
-    @import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap');
-    @import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
-    @import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+    /*@import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap');*/
+    /*@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');*/
+    /*@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');*/
+    /*@font-face {*/
+    /*    font-family: "IBM";*/
+    /*    src: url("static/fonts/PxPlus_IBM_EGA8.ttf");*/
+    /*}*/
 
     :root {
         --green: #19AC14;
@@ -26,6 +30,7 @@
         /*font-family: 'Major Mono Display', Consolas, monospace, sans-serif;*/
         /*font-family: 'VT323', Consolas, monospace, sans-serif;*/
         /*font-family: 'Share Tech Mono', Consolas, monospace, sans-serif;*/
+        /*font-family: 'IBM', Consolas, monospace, sans-serif;*/
         font-family: Consolas, monospace, sans-serif;
         font-size: 1.3em;
         color: var(--light);
@@ -34,11 +39,16 @@
         box-sizing: border-box;
     }
 
+    a {
+        color: var(--blue);
+    }
+
     .terminal {
+        overflow-y: scroll;
         padding: 20px;
         height: 100%;
-        border: 1px solid var(--green);
-        overflow-y: scroll;
+        /*border: 1px solid var(--green);*/
+        box-shadow: 0 0 5px rgba(72,239,67, 0.7);
     }
 
     .base-line {
