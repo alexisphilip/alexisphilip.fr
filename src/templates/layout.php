@@ -40,14 +40,14 @@
     </script>
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
-<!--    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-156016150-2"></script>-->
-<!--    <script>-->
-<!--        window.dataLayer = window.dataLayer || [];-->
-<!--        function gtag(){dataLayer.push(arguments);}-->
-<!--        gtag('js', new Date());-->
-<!---->
-<!--        gtag('config', 'UA-156016150-2');-->
-<!--    </script>-->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-156016150-2"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-156016150-2');
+    </script>
 
     <!-- Favicon. -->
     <link rel="apple-touch-icon" sizes="180x180" href="<?= img_url("favicons/apple-touch-icon.png") ?>">

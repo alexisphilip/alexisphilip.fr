@@ -28,7 +28,7 @@ ARTICLE CSS:
   
 ## Spacing
 - even header & footer spacing
-  
+
 ## Emojis
 - possiblity to add custom images / logos / icons instead of emojis (for Cubing & 3D printing...)
 
