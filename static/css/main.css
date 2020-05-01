@@ -605,6 +605,9 @@ footer {
 }
 
 
+
+
+
 /* PRISM.JS OVERWRITE */
 pre[class*="language-"],
 code[class*="language-"] {
@@ -612,6 +615,18 @@ code[class*="language-"] {
     font-size: 0.95em;
     text-shadow: none;
 }
+p code {
+    background: var(--bg-light);
+    color: var(--color-font-text);
+    padding: 4px 6px;
+    font-family: Consolas, sans-serif, inherit;
+    font-weight: 800;
+    font-size: 1.1em;
+    border-radius: 3px;
+}
+
+
+
 
 
 /* Header */

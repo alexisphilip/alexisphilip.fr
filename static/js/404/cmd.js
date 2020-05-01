@@ -10,6 +10,8 @@
 //  ADD typewriter effect
 //  insert Rick smoothly from the bottom as background? would be awesome
 
+//  /!\ ON ENTER, FOCUS OUT, APPEND RESULT BELOW, AND APPEND INPUT AGAIN
+
 class Cmd
 {
     constructor() {
