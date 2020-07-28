@@ -60,11 +60,11 @@ class Commands {
         else if (args[0] === "-m" && args[2] === "-k") {
             // Is decrypting is correct
             if (args[1] === "eiH3aeL2am9ieri3" && args[3] === "42") {
-                // TODO: make animation where is fakes being decrypted, with ... and wait...
+                // TODO: make animation when message being decrypted, with ... and wait...
                 Output.write("<a href='" + link + "'>" + answer + "</a>");
                 Output.write('<iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>');
             } else {
-                Output.write("Decryption failed : wong key or phrase.");
+                Output.write("Decryption failed : wrong key or phrase.");
             }
         } else {
 
