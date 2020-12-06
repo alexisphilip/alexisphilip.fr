@@ -1,5 +1,5 @@
 {
-    "date": "2020-04-17",
+    "date": "2019-04-17",
     "title": "My first article!",
     "slug": "first-article",
     "categories": [

@@ -1,5 +1,5 @@
 {
-    "date": "2020-04-17",
+    "date": "2019-04-23",
     "title": "How to install LAMP on Linux",
     "slug": "install-lamp-on-linux",
     "categories": [
