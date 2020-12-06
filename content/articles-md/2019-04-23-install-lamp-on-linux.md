@@ -128,4 +128,4 @@ We learned how to install Apache, PHP, MySQL and PHPMyAdmin on a Linux distribut
 Now, you could learn how to configure Apache [https://www.alexisphilip.fr](Virtual Hosts) or how to
 [https://www.alexisphilip.fr](administrate MySQL).
 
-[apache-default-page]: https://www.alexisphilip.fr/static/img/articles/2020-04-23-apache-default-page.png
+[apache-default-page]: https://www.alexisphilip.fr/static/img/articles/2019-04-23-apache-default-page.png

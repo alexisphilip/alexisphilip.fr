@@ -419,6 +419,10 @@ footer {
     margin-left: 20px;
 }
 
+.list-el-right p {
+    white-space: nowrap;
+}
+
 
 /* List element (projects) */
 
