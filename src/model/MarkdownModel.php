@@ -45,9 +45,9 @@ class MarkdownModel
         // Sorts the articles by date.
         function date_compare($a, $b)
         {
-            $t1 = strtotime($a["date"]);
-            $t2 = strtotime($b["date"]);
-            return $t1 + $t2;
+            $t1 = strtotime($b["date"]);
+            $t2 = strtotime($a["date"]);
+            return $t1 - $t2;
         }
 
         // Sorts by calling the sorting function.
@@ -82,17 +82,17 @@ class MarkdownModel
      * E.g.: input
      *
      * {
-     *   "title": "Article title",
+     *   "title": "Article's title",
      *   "slug": "article-title"
      * }
-     * # This is an article
+     * # This is a title
      * This is a paragraph
      *
      * E.g.: output
      *
      * [
-     *   "file_info" => ["title" => "Article title", "slug" => "article-title"],
-     *   "file_content => "# This is an article \n This is a paragraph"
+     *   "file_info" => ["title" => "Article's title", "slug" => "article-title"],
+     *   "file_content => "# This is a title \n This is a paragraph"
      * ]
      *
      * @param string $file_content The file's raw text content.
