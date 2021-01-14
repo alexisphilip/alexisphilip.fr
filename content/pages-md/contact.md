@@ -8,7 +8,7 @@ Contact me at **[alexis.philip13@gmail.com](mailto:alexis[DOT]philip13[AT]gmail[
 
 ## Curriculum Vitae
 
-[It's over here](https://github.com/alexisphilip/curriculum-vitae/blob/master/alexis-philip-cv.pdf) 📃.
+Here's my [curriculum vitae](https://github.com/alexisphilip/curriculum-vitae/blob/master/alexis-philip-cv.pdf) 📃.
 
 Oh, it's [also open source on my GitHub](https://github.com/alexisphilip/curriculum-vitae)!
 
