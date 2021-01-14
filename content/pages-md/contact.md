@@ -8,13 +8,13 @@ Contact me at **[alexis.philip13@gmail.com](mailto:alexis[DOT]philip13[AT]gmail[
 
 ## Curriculum Vitae
 
-[It's over here](https://www.alexisphilip.fr/static/files/curriculum-vitae.pdf) 📃
+[It's over here](https://github.com/alexisphilip/curriculum-vitae/blob/master/alexis-philip-cv.pdf) 📃.
 
-Oh, it's also open source [https://github.com/alexisphilip/curriculum-vitae](https://github.com/alexisphilip/curriculum-vitae). 
+Oh, it's [also open source on my GitHub](https://github.com/alexisphilip/curriculum-vitae)!
 
 ## I'm also over here
 
-- Email: **[alexis.philip13@gmail.com](mailto:alexis[DOT]philip13[AT]gmail[DOT]com)**
+- Email: **[alexis.philip13@gmail.com](mailto:alexis.philip13@gmail.com)**
 - GitHub: **[alexisphilip](https://github.com/alexisphilip)**
 - LinkedIn: **[Alexis Philip](https://www.linkedin.com/in/alexis-philip-019955176)**
 - Instagram: **[alexisphilip13](https://www.instagram.com/alexisphilip13/)**

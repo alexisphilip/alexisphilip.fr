@@ -5,12 +5,18 @@ I am a full stack developer based in Aix-en-Provence, France. From small program
 widgets to libraries, I focus on maintaining a strict workflow to build clean and reusable environments.
 Creating useful and original content is what I love to do.
 
-I also love to write, about [lots of stuff](https://www.alexisphilip.fr/blog).
+I also love to write, about [lots of stuff](/blog).
 
 ## Things I like to do
 
-- Programming 💻;
-- Building things (keyboards ⌨, mainly);
-- 3D printing 🛌;
-- Piano 🎹;
-- Solving weird puzzles, like giant Rubik's Cubes 🎲. 
+- [Programming](/category/programming) 💻;
+- [Building keyboards](/category/programming) ⌨ ;
+- [3D printing](/category/3d-printing) 🛌;
+- [Piano](/category/piano) 🎹;
+- Solving [weird puzzles](/category/cubing), like giant Rubik's Cubes 🎲. 
+
+## Curriculum Vitae
+
+Here's my [curriculum vitae](https://github.com/alexisphilip/curriculum-vitae/blob/master/alexis-philip-cv.pdf) 📃.
+
+Oh, it's [also open source on my GitHub](https://github.com/alexisphilip/curriculum-vitae)!
