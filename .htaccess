@@ -1,7 +1,5 @@
 RewriteEngine On
 
-RewriteRule ^blare/(.*)$ /content/blare/$1 [L,R=301,NC]
-
 RewriteRule ^color(.*)picker$ /demo/lighty-colorpicker [R=301,L]
 RewriteRule ^date(.*)picker$ /demo/lighty-datepicker [R=301,L]
 RewriteRule ^clipboard$ /demo/lighty-clipboard [R=301,L]
