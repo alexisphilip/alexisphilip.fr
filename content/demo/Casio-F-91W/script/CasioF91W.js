@@ -35,7 +35,7 @@
  * 
  * @author Alexis Philip (alexisphilip.fr)
  */
-class CasioF91W {
+ class CasioF91W {
     /**
      * The watch's operating system object.
      * @var {CasioF91WOperatingSystem}
@@ -68,7 +68,7 @@ class CasioF91W {
 
         buttonL.addEventListener("mouseup", e => {
             this.os.buttonL(false);
-            if (typeof onButtonClick === "function") this.onButtonClick();
+            if (typeof this.onButtonClick === "function") this.onButtonClick();
         });
         
         /**
@@ -80,7 +80,7 @@ class CasioF91W {
 
         buttonC.addEventListener("mouseup", e => {
             this.os.buttonC(false);
-            if (typeof onButtonClick === "function") this.onButtonClick();
+            if (typeof this.onButtonClick === "function") this.onButtonClick();
         });
         
         /**
@@ -92,7 +92,7 @@ class CasioF91W {
 
         buttonA.addEventListener("mouseup", e => {
             this.os.buttonA(false);
-            if (typeof onButtonClick === "function") this.onButtonClick();
+            if (typeof this.onButtonClick === "function") this.onButtonClick();
         });
     }
 }
