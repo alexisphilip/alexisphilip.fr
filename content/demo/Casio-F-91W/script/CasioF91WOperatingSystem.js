@@ -189,7 +189,7 @@ class CasioF91WOperatingSystem {
         this.lap = false;
 
         // Casio's "bip" sound.
-        this.bip = new Audio("sound/bip.mp3");
+        this.bip = new Audio("https://www.alexisphilip.fr/content/demo/Casio-F-91W/sound/bip.mp3");
 
         // Instantiates the watch's digital display system.
         this.digitalDisplay = new CasioF91WDigitalDisplay();
